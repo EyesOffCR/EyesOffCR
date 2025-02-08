@@ -30,17 +30,21 @@ fi
 
 # Clean any previous builds
 print_status "Cleaning previous builds..."
-npm run clean
+rm -rf dist
 
 # Build the site
 print_status "Building site..."
-npm install
-npm run build
+sudo -u $SUDO_USER npm install
+sudo -u $SUDO_USER npm run build
 
 if [ $? -ne 0 ]; then
     print_error "Build failed!"
     exit 1
 fi
+
+# Build CSS
+print_status "Building CSS..."
+sudo -u $SUDO_USER npx tailwindcss -i ./src/css/styles.css -o ./dist/assets/main.css
 
 # Show what we're replacing
 print_status "Current contents of /var/www/eyesoffcr:"
@@ -50,20 +54,27 @@ ls -la /var/www/eyesoffcr/
 print_status "Deploying built files..."
 rm -rf /var/www/eyesoffcr/*
 
+# Create necessary directories
+print_status "Creating deployment directories..."
+mkdir -p /var/www/eyesoffcr/assets
+mkdir -p /var/www/eyesoffcr/src
+mkdir -p /var/www/eyesoffcr/blog
+
 # Copy the main site files and assets
 print_status "Copying main site files and assets..."
 cp -r dist/* /var/www/eyesoffcr/
 
-# Verify assets were copied
-if [ ! -d "/var/www/eyesoffcr/assets" ]; then
-    print_error "Assets directory missing in deployment!"
-    exit 1
-fi
+# Copy HTML files from root
+print_status "Copying HTML files..."
+cp *.html /var/www/eyesoffcr/
+
+# Copy source files for development mode
+print_status "Copying source files..."
+cp -r src/* /var/www/eyesoffcr/src/
 
 # Copy the blog files
 print_status "Copying blog files..."
-mkdir -p /var/www/eyesoffcr/blog
-cp -r blog/* /var/www/eyesoffcr/blog/
+cp -r blog/* /var/www/eyesoffcr/blog/ 2>/dev/null || true
 
 # Copy additional resources
 print_status "Copying additional resources..."
@@ -77,8 +88,11 @@ chmod -R 755 /var/www/eyesoffcr
 print_status "Done! Current contents of /var/www/eyesoffcr:"
 ls -la /var/www/eyesoffcr/
 
-print_status "Verifying blog deployment..."
-ls -la /var/www/eyesoffcr/blog/
+print_status "Verifying deployment..."
+if [ ! -f "/var/www/eyesoffcr/assets/main.css" ]; then
+    print_error "CSS file missing in deployment!"
+    exit 1
+fi
 
 print_status "Deployment complete!"
 print_warning "Don't forget to verify the site is working at https://eyesoffcr.org"
