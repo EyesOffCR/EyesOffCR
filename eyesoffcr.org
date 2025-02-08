@@ -1,0 +1,18 @@
+server {
+    listen 94.130.53.81:80;
+    listen [::]:80;
+    server_name eyesoffcr.org www.eyesoffcr.org;
+
+    root /var/www/eyesoffcr;
+    index index.html;
+
+    # Cloudflare proxy support
+    real_ip_header CF-Connecting-IP;
+    proxy_ssl_server_name on;
+    proxy_ssl_name $host;
+
+    # Remove any HTTPS redirects - let Cloudflare handle SSL
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

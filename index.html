@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyesOffCR.org - Protect Cedar Rapids from Mass Surveillance</title>
+    <meta name="description" content="Learn about the dangers of mass surveillance technologies and ALPRs in Cedar Rapids, Iowa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script type="module" src="/src/js/main.js"></script>
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
+                    <a href="/about.html" class="text-white hover:text-secondary transition-colors">About</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
+                    <a href="/about.html" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add this script right before the closing body tag -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-64 md:w-96 h-auto mx-auto mb-6" />
+            <h1 class="text-5xl md:text-7xl font-bold text-secondary mb-4">
+                Track Flock Surveillance in Cedar Rapids
+            </h1>
+            <p class="text-lg md:text-2xl mb-6">
+                Mapping Flock's ALPR cameras and demanding transparency about how they track our community.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#camera-map" class="action-button bg-secondary">
+                    View Camera Map
+                </a>
+                <a href="#transparency" class="action-button bg-white/10">
+                    Transparency Portal
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="learn-more" class="section">
+        <div class="section-content">
+            <h2 class="section-header">Flock ALPR Cameras in Cedar Rapids</h2>
+            <p class="text-lg mb-6">
+                In March 2024, Cedar Rapids approved a $499,250 contract with Flock Safety to install automated license plate readers (ALPRs) throughout our city.
+            </p>
+
+            <!-- Add Camera Image -->
+            <div class="bg-black/30 p-6 rounded-lg mb-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Know What to Look For</h3>
+                        <p class="mb-4">Flock cameras are typically mounted on poles and look like this:</p>
+                        <ul class="space-y-2">
+                            <li>• Usually mounted 10-14 feet high</li>
+                            <li>• Solar panel on top</li>
+                            <li>• Black camera housing</li>
+                            <li>• Often near intersections or major roads</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/flock.png" 
+                             alt="Flock ALPR Camera" 
+                             class="rounded-lg max-h-[300px] w-auto shadow-lg"
+                             title="Example of a Flock ALPR camera installation" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">What They Collect</h3>
+                    <ul class="space-y-3">
+                        <li>• Photograph every passing vehicle</li>
+                        <li>• Record license plates, vehicle details, and location</li>
+                        <li>• Track movement patterns across the city</li>
+                        <li>• Store data for extended periods</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Why It Matters</h3>
+                    <ul class="space-y-3">
+                        <li>• No public oversight of data collection</li>
+                        <li>• History of misuse in other cities</li>
+                        <li>• Disproportionate impact on communities of color</li>
+                        <li>• No proven impact on public safety</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camera Map Section -->
+    <section id="camera-map" class="section highlight-section">
+        <div class="section-content">
+            <h2 class="section-header">Cedar Rapids ALPR Camera Map</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="mb-6 text-center">
+                    <p class="text-lg mb-4">
+                        Cedar Rapids plans to deploy Flock Safety ALPR cameras throughout the city. Unlike Oak Park, IL and other cities, 
+                        Cedar Rapids has not provided a public map of camera locations or a transparency portal.
+                    </p>
+                    <a href="https://transparency.flocksafety.com/oak-park-il-pd" 
+                       target="_blank" 
+                       class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg mb-8">
+                        View Oak Park's Transparency Portal
+                    </a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">What Oak Park Shows</h3>
+                        <ul class="space-y-3">
+                            <li>• Exact camera locations on public map</li>
+                            <li>• Monthly search statistics</li>
+                            <li>• Reason for each search</li>
+                            <li>• Hot list source tracking</li>
+                            <li>• Data sharing agreements</li>
+                            <li>• Authorized user list</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">What Cedar Rapids Hides</h3>
+                        <ul class="space-y-3">
+                            <li>• No public camera location map</li>
+                            <li>• No search transparency</li>
+                            <li>• No data sharing disclosure</li>
+                            <li>• No user accountability</li>
+                            <li>• No community oversight</li>
+                            <li>• No impact reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                    <iframe 
+                        src="https://deflock.me/map#map=12/41.980805/-91.661339"
+                        class="w-full h-[600px] rounded-lg"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Community Camera Tracking</h3>
+                        <p class="mb-4">Help us create the transparency our city won't provide. Report Flock camera locations:</p>
+                        <ul class="space-y-2">
+                            <li>• Include cross streets or GPS coordinates</li>
+                            <li>• Note installation date if known</li>
+                            <li>• Describe camera mounting (pole type, height)</li>
+                            <li>• Submit photos if possible</li>
+                        </ul>
+                        <a href="#" class="contact-email inline-block mt-4 px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Submit Camera Location
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Current Status</h3>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">Unknown</div>
+                                <div class="text-sm">Number of Cameras</div>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">March 2024</div>
+                                <div class="text-sm">Contract Approved</div>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">$499,250</div>
+                                <div class="text-sm">Two-Year Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Portal Section -->
+    <section id="transparency" class="section">
+        <div class="section-content">
+            <h2 class="section-header">Demand a Real Transparency Portal</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="mb-8">
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Oak Park's Portal Shows:</h3>
+                            <div class="bg-black/20 p-6 rounded-lg">
+                                <ul class="space-y-3">
+                                    <li>• Total vehicles scanned</li>
+                                    <li>• Monthly searches performed</li>
+                                    <li>• Search reasons breakdown</li>
+                                    <li>• Data sharing agreements</li>
+                                    <li>• Authorized user list</li>
+                                    <li>• Camera locations map</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Cedar Rapids Should Show:</h3>
+                            <div class="bg-black/20 p-6 rounded-lg">
+                                <ul class="space-y-3">
+                                    <li>• Real-time scanning statistics</li>
+                                    <li>• Monthly transparency reports</li>
+                                    <li>• Search audit logs</li>
+                                    <li>• Data retention compliance</li>
+                                    <li>• Agency access list</li>
+                                    <li>• Public camera map</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Usage Stats</h3>
+                        <ul class="space-y-2">
+                            <li>• Total scans per camera</li>
+                            <li>• Search frequency</li>
+                            <li>• Hit/miss rates</li>
+                            <li>• Search reasons</li>
+                            <li>• Outcome tracking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Access Logs</h3>
+                        <ul class="space-y-2">
+                            <li>• Officer name/badge</li>
+                            <li>• Search timestamp</li>
+                            <li>• Reason for search</li>
+                            <li>• Case number</li>
+                            <li>• Results shared</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Oversight</h3>
+                        <ul class="space-y-2">
+                            <li>• Monthly audits</li>
+                            <li>• Policy compliance</li>
+                            <li>• Error reporting</li>
+                            <li>• Misuse tracking</li>
+                            <li>• Impact analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-lg mb-4">Oak Park shows what real transparency looks like. Will Cedar Rapids do the same?</p>
+                    <a href="#take-action" class="inline-block px-8 py-3 bg-secondary text-black font-bold rounded-lg">
+                        Demand Transparency
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="section highlight-section">
+        <div class="section-content text-center">
+            <h2 class="section-header">Take Action</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <p class="text-xl mb-8">
+                    Join us in demanding transparency and accountability for surveillance technology in Cedar Rapids.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Contact Council</h3>
+                        <p class="mb-4">Tell city leaders we need transparency about how Flock cameras are used.</p>
+                        <a href="https://www.cedar-rapids.org/local_government/city_council/mayor_and_city_council/index.php" 
+                           target="_blank" 
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Contact Leaders
+                        </a>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Spread the Word</h3>
+                        <p class="mb-4">Share information about Flock surveillance with your neighbors.</p>
+                        <a href="/media_package.html" 
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Get Resources
+                        </a>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Get Updates</h3>
+                        <p class="mb-4">Stay informed about surveillance in Cedar Rapids.</p>
+                        <a href="https://www.instagram.com/eyesoffcr/" 
+                           target="_blank"
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Follow Updates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section id="sources" class="section">
+        <div class="section-content">
+            <h2 class="section-header">Sources and Info</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Research & Studies</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://link.springer.com/article/10.1007/s11292-011-9133-9" target="_blank" class="text-secondary hover:underline">
+                                Journal of Experimental Criminology: No deterrent effect from ALPR patrols in crime hot spots
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.eff.org/deeplinks/2015/01/what-we-learned-oakland-raw-alpr-data" target="_blank" class="text-secondary hover:underline">
+                                EFF Study: ALPRs disproportionately deployed in communities of color
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.freedomtothriveop.com/blog/zine-analyzes-flock-alpr-cameras-in-oak-park-il" target="_blank" class="text-secondary hover:underline">
+                                Oak Park Study: 84% of ALPR-initiated stops targeted Black drivers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Security Concerns</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.404media.co/researcher-turns-insecure-license-plate-cameras-into-open-source-surveillance-tool/" target="_blank" class="text-secondary hover:underline">
+                                Critical Security Flaw Found in Motorola ALPR System (2025)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.aclu.org/blog/privacy-technology/location-tracking/san-francisco-woman-pulled-out-car-gunpoint-because" target="_blank" class="text-secondary hover:underline">
+                                ACLU: San Francisco Woman Pulled Out of Car at Gunpoint Due to ALPR Error
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Documented Abuse</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/" target="_blank" class="text-secondary hover:underline">
+                                Police Officer Used Flock ALPRs to Stalk Estranged Wife
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://inewsource.org/2022/01/06/police-share-license-plate-data/" target="_blank" class="text-secondary hover:underline">
+                                Police Breaking the Law by Sharing Drivers' Data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.latimes.com/business/technology/story/2020-12-21/pasadena-long-beach-police-ice-automated-license-plate-reader-data" target="_blank" class="text-secondary hover:underline">
+                                Police Sharing ALPR Data with ICE Despite Legal Prohibitions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email show-email text-secondary">Contact Us</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+
+  section {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-section px-4 md:px-8 lg:px-16;
+  }
+  
+  .section-header {
+    @apply text-4xl md:text-5xl font-display font-bold mb-8 text-secondary;
+  }
+  
+  .section-content {
+    @apply max-w-4xl mx-auto;
+  }
+  
+  .hero {
+    @apply min-h-screen flex items-center justify-center text-center;
+    background: linear-gradient(to bottom, #000, #000),
+                url('/images/grid-pattern.svg');
+  }
+  
+  .highlight-section {
+    @apply bg-black text-white;
+  }
+  
+  .danger-item {
+    @apply flex items-start gap-4 mb-6;
+  }
+  
+  .action-button {
+    @apply bg-accent hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full 
+           transition duration-300 inline-block;
+  }
+
+  /* Background color overrides */
+  .bg-white\/10 {
+    @apply bg-black bg-opacity-50;
+  }
+  
+  .bg-black\/30, .bg-black\/20 {
+    @apply bg-white bg-opacity-10;
+  }
+
+  /* Blog specific styles */
+  .blog-content {
+    @apply max-w-[800px] mx-auto leading-relaxed;
+  }
+
+  .blog-content h1 {
+    @apply text-4xl mb-4 text-secondary;
+  }
+
+  .blog-content h3 {
+    @apply text-2xl mt-8 mb-4 text-secondary;
+  }
+
+  .blog-content p {
+    @apply mb-6;
+  }
+
+  .blog-content ul {
+    @apply mb-6 pl-6 list-disc;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+
+  .blog-content hr {
+    @apply my-8 border-white border-opacity-10;
+  }
+
+  .blog-content strong {
+    @apply text-secondary;
+  }
+
+  .blog-meta {
+    @apply text-sm text-gray-400 mb-8;
+  }
+} 
