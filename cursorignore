@@ -1,0 +1,53 @@
+# Build output
+dist/
+.cache/
+
+# Dependencies
+node_modules/
+venv/
+
+# Generated files
+*.log
+*.lock
+package-lock.json
+
+# Large binary files
+downloads/**/*.pdf
+downloads/**/*.xlsx
+downloads/**/*.png
+downloads/**/*.jpg
+downloads/**/*.jpeg
+downloads/**/*.gif
+downloads/**/*.ico
+public/images/**/*.png
+public/images/**/*.jpg
+public/images/**/*.jpeg
+public/images/**/*.gif
+public/images/**/*.ico
+
+# Environment and IDE files
+.env*
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Cypress generated files
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Stats and analytics
+*_stats.sh
+view_stats.sh 

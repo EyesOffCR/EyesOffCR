@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 10000,
+    "wait": 1000,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    },
+    "ignore": [
+      "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail"
+    ]
+  },
+  "urls": [
+    "http://localhost:4173/",
+    "http://localhost:4173/about.html",
+    "http://localhost:4173/media_package.html"
+  ]
+} 

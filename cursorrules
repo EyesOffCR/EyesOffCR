@@ -1,0 +1,149 @@
+# Project: EyesOffCR.org - Privacy Advocacy Website
+
+## Project Overview
+- Static site built with Vite and Tailwind CSS
+- Focus on accessibility and performance
+- Content includes blog posts, downloadable resources, and interactive maps
+- Privacy-first approach to user data and analytics
+
+## Coding Standards
+- Use vanilla JavaScript (no frameworks required)
+- Follow HTML5 semantic markup standards
+- Implement responsive design using Tailwind CSS
+- Maintain WCAG 2.1 AA compliance
+- No user tracking or analytics scripts
+- No third-party CDNs for critical resources
+- Prefer `<button>` over `<div>` for interactive elements
+- Use appropriate ARIA labels where needed
+
+## Directory Structure
+- /src: Source files (CSS, JS)
+  - /src/css: Stylesheets and Tailwind config
+  - /src/js: JavaScript modules and utilities
+- /public/images: Static image assets
+  - /public/images/blog: Blog post images
+  - /public/images/social: Social media assets
+- /downloads: Downloadable content (PDFs, images)
+  - /downloads/social: Social media kits
+  - /downloads/flyers: Printable materials
+  - /downloads/stickers: Sticker designs
+- /blog: Blog posts and related content
+  - Use yyyy-mm-dd-title.html format for posts
+- /scripts: Deployment and utility scripts
+  - Keep sensitive information in .env files
+
+## Style Guidelines
+- Use 2 spaces for indentation
+- Max line length: 100 characters
+- Follow BEM naming convention for custom CSS
+- Keep JavaScript modular and function-based
+- CSS class naming convention:
+  - Block: lowercase with hyphens (e.g., 'card-container')
+  - Element: double underscore (e.g., 'card__title')
+  - Modifier: double hyphen (e.g., 'card--featured')
+- JavaScript naming:
+  - camelCase for variables and functions
+  - PascalCase for classes
+  - UPPER_SNAKE_CASE for constants
+
+## Asset Management
+- Place all downloadable content in /downloads
+- Store static images in /public/images
+- Use descriptive filenames (e.g., flock-camera-installation.jpg)
+- Optimize images before committing
+- Image requirements:
+  - Maximum dimensions: 1920x1080px
+  - JPEG quality: 80-85%
+  - PNG compression: enabled
+  - WebP format for web-only images
+  - Include source files in /assets-src (not in repo)
+
+## Accessibility Requirements
+- All images must have meaningful alt text
+- Maintain color contrast ratio of 4.5:1 minimum
+- Ensure keyboard navigation works
+- Run pa11y tests before deployment
+- Additional requirements:
+  - Use semantic HTML elements
+  - Implement skip navigation
+  - Ensure proper heading hierarchy
+  - Provide visible focus indicators
+  - Test with screen readers
+  - Support text resizing up to 200%
+
+## Testing
+- Write Cypress tests for critical user paths
+- Run accessibility tests with pa11y-ci
+- Test responsive layouts across breakpoints
+- Verify all downloads are accessible
+- Test scenarios:
+  - Mobile devices (320px to 428px)
+  - Tablets (768px to 1024px)
+  - Desktops (1024px and above)
+  - Slow network conditions
+  - No JavaScript fallbacks
+  - Screen reader compatibility
+
+## Build and Deployment
+- Run npm build before deployment
+- Verify CSS is properly bundled
+- Check all asset paths are correct
+- Follow deploy.sh script guidelines
+- Pre-deployment checklist:
+  - Run all tests
+  - Check console for errors
+  - Validate HTML
+  - Test all downloads
+  - Verify meta tags
+  - Check robots.txt
+  - Validate sitemap.xml
+
+## Documentation
+- Update README.md with any new features
+- Document any configuration changes
+- Keep blog post frontmatter consistent
+- Comment complex JavaScript functions
+- Required documentation:
+  - Setup instructions
+  - Development workflow
+  - Build process
+  - Deployment steps
+  - Content management guide
+  - Testing procedures
+
+## Performance Guidelines
+- Keep image sizes optimized
+- Minimize third-party scripts
+- Use async/defer for non-critical scripts
+- Monitor Lighthouse performance scores
+- Performance targets:
+  - First Contentful Paint: < 1.5s
+  - Largest Contentful Paint: < 2.5s
+  - Time to Interactive: < 3.5s
+  - Cumulative Layout Shift: < 0.1
+  - First Input Delay: < 100ms
+
+## Content Guidelines
+- Use clear, accessible language
+- Keep downloadable resources up-to-date
+- Maintain consistent tone across blog posts
+- Include proper attribution for sources
+- Writing style:
+  - Active voice
+  - Short paragraphs
+  - Bulleted lists for clarity
+  - Consistent terminology
+  - Avoid technical jargon
+  - Include clear calls to action
+
+Remember to:
+- Consider privacy implications in feature development
+- Keep deployment scripts updated
+- Regularly test all interactive features
+- Monitor and update dependencies
+- Security considerations:
+  - No tracking scripts
+  - No third-party analytics
+  - Local font hosting
+  - Content Security Policy
+  - Regular dependency audits 

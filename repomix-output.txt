@@ -1,0 +1,4256 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: dist/**/*, node_modules/**/*, downloads/social/QnA.PDF, downloads/social/PUR0424-254.pdf, downloads/social/Award_Detail_Spreadsheet.xlsx, **/*.png, **/*.jpg, **/*.jpeg, **/*.gif, **/*.ico
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+
+Additional Info:
+----------------
+
+================================================================
+Directory Structure
+================================================================
+blog/
+  holding-cedar-rapids-accountable.html
+  how-this-happened.html
+  index.html
+cypress/
+  e2e/
+    content.cy.js
+    navigation.cy.js
+  support/
+    e2e.js
+public/
+  images/
+    grid-pattern.svg
+src/
+  css/
+    main.css
+    styles.css
+  js/
+    main.js
+.gitignore
+.pa11yci
+.repomixignore
+about.html
+binary-manifest.json
+cypress.config.js
+deploy.sh
+index.html
+media_package.html
+package.json
+README.md
+repomix.config.json
+tailwind.config.js
+vite.config.cjs
+
+================================================================
+Files
+================================================================
+
+================
+File: blog/holding-cedar-rapids-accountable.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holding Cedar Rapids Accountable for ALPRs - EyesOffCR.org</title>
+    <meta name="description" content="Learn about our initiative to ensure transparency and accountability in Cedar Rapids' use of automated license plate readers (ALPR).">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+    <script type="module" crossorigin src="/assets/index-B4K8Z4Se.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CTfeZFBM.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="section">
+        <div class="section-content max-w-4xl mx-auto">
+            <div class="bg-black/30 p-8 rounded-lg">
+                <h1 class="text-3xl font-bold text-secondary mb-4">
+                    Holding Cedar Rapids Accountable for Automated License Plate Readers (ALPR)
+                </h1>
+                <div class="text-sm text-gray-400 mb-8">March 1, 2024</div>
+                
+                <div class="blog-content space-y-6">
+                    <p class="text-lg">
+                        Welcome to <strong class="text-secondary">EyesOffCedarRapids</strong>, a web-based, community-driven initiative focused on transparency, accountability, and raising awareness about the Cedar Rapids Police Department's (CRPD) use of automated license plate readers (ALPR). Our mission is to spark conversations, educate the public, and ensure responsible use of this technology.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-secondary">What's the Project About?</h2>
+                    <p>
+                        Automated license plate readers (ALPR) are powerful tools used to track vehicles in real time. While they can enhance public safety, their use raises critical questions about <strong class="text-secondary">privacy, civil rights, and oversight</strong>.
+                    </p>
+
+                    <p>At EyesOffCedarRapids, we aim to:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong class="text-secondary">Raise awareness</strong> about ALPR in Cedar Rapids</li>
+                        <li><strong class="text-secondary">Advocate for transparency</strong> and public involvement in its use</li>
+                        <li><strong class="text-secondary">Hold CRPD accountable</strong> through community dialogue on privacy and civil liberties</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-secondary">What Have We Accomplished?</h2>
+                    <p>We've built a foundation for community engagement:</p>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li><strong class="text-secondary">Website</strong> – Your hub for ALPR resources and updates</li>
+                        <li><strong class="text-secondary">Reddit Community</strong> – Join discussions at <a href="https://www.reddit.com/r/EyesOffCedarRapids" class="text-secondary hover:underline">r/EyesOffCedarRapids</a></li>
+                    </ol>
+
+                    <div class="bg-black/20 p-6 rounded-lg mt-8">
+                        <h4 class="text-xl font-bold text-secondary mb-4">Stay Connected</h4>
+                        <p class="mb-4">Follow our Instagram account for:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Daily updates on ALPR deployments</li>
+                            <li>Community action alerts</li>
+                            <li>Educational content about surveillance</li>
+                            <li>Ways to get involved</li>
+                        </ul>
+                        <a href="https://www.instagram.com/eyesoffcr/" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="inline-block mt-6 px-6 py-3 bg-secondary text-black font-bold rounded-lg hover:bg-opacity-90 transition-colors">
+                            Follow @EyesOffCR on Instagram
+                        </a>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-secondary">What We Need Next</h2>
+                    <p>We're looking for contributions and support to grow the movement:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong class="text-secondary">Infographics</strong>: Visual guides to explain ALPR and its impact</li>
+                        <li><strong class="text-secondary">Posters & Stickers</strong>: Designs to spread awareness</li>
+                        <li><strong class="text-secondary">Camera Locations</strong>: Help map ALPR installations</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-secondary">Get Involved</h2>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong class="text-secondary">Stay Updated</strong>: Follow us on social media</li>
+                        <li><strong class="text-secondary">Contribute Ideas</strong>: Share creative concepts or research</li>
+                        <li><strong class="text-secondary">Volunteer</strong>: Help with infographics, camera mapping, or outreach</li>
+                        <li><strong class="text-secondary">Spread Awareness</strong>: Share our resources</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-secondary">Contact Us</h2>
+                    <p>
+                        Have ideas or want to get involved? Reach out via <a href="mailto:eyesoffcr@proton.me" class="text-secondary hover:underline">email</a> or Instagram DM. Together, we can ensure transparency, accountability, and responsible use of ALPR in Cedar Rapids.
+                    </p>
+
+                    <p class="text-lg"><strong class="text-secondary">Join us and make a difference!</strong></p>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-white/10">
+                    <a href="/blog/" class="text-secondary hover:underline">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="mailto:eyesoffcr@proton.me" class="text-secondary">eyesoffcr@proton.me</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
+================
+File: blog/how-this-happened.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DRAFT] How Cedar Rapids Embraced Mass Surveillance - EyesOffCR.org</title>
+    <meta name="description" content="The story of how Cedar Rapids approved a $499,250 contract for automated license plate readers, and what it means for privacy.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/assets/main.css?v=1">
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* Draft banner */
+        .draft-banner {
+            background-color: #FFD700;
+            color: black;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Draft Banner -->
+    <div class="draft-banner">
+        ⚠️ DRAFT POST - NOT FOR PUBLICATION ⚠️
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post -->
+    <article class="section">
+        <div class="section-content max-w-4xl mx-auto">
+            <div class="bg-black/30 p-8 rounded-lg">
+                <h1 class="text-3xl font-bold text-secondary mb-4">
+                    How Cedar Rapids Embraced Mass Surveillance: A Timeline
+                </h1>
+                <div class="text-sm text-gray-400 mb-8">[DRAFT] March 2024</div>
+                
+                <div class="blog-content space-y-6">
+                    <p class="text-lg">
+                        In March 2024, Cedar Rapids approved a $499,250 contract with Flock Safety to install automated license plate readers throughout our city.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-secondary">The Lead-Up</h2>
+                    <p class="mb-4">
+                        The path to mass surveillance in Cedar Rapids began with a Request for Proposal (RFP) issued by the city in late April 2024. The timeline reveals a concerning lack of meaningful public engagement:
+                    </p>
+
+                    <div class="bg-black/20 p-6 rounded-lg mb-8">
+                        <h4 class="text-xl font-bold text-secondary mb-4">Critical Timeline</h4>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li><strong>April 29, 2024, 9:09 AM CDT:</strong> City issues RFP for ALPR system (<a href="https://citycrbids.ionwave.net/PublicDetail.aspx?bidID=1163&SourceType=3&bidNumber=PUR0424-254+" target="_blank" class="text-secondary hover:underline">PUR0424-254</a>)</li>
+                            <li><strong>May 13, 2024, 3:00 PM CDT:</strong> Deadline for questions about the proposal (14 days)</li>
+                            <li><strong>May 28, 2024, 3:00 PM CDT:</strong> Final deadline for proposal submissions (29 days total)</li>
+                            <li><strong>June 4, 2024:</strong> Proposal evaluation completed</li>
+                            <li><strong>June 25, 2024:</strong> Scheduled City Council resolution for contract approval</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-black/20 p-6 rounded-lg mb-8">
+                        <h4 class="text-xl font-bold text-secondary mb-4">Proposal Evaluation</h4>
+                        <p class="mb-4">The evaluation of Flock Group Inc.'s proposal noted:</p>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li>Financial proposal within department budget</li>
+                            <li>Equipment delivery timeframe provided</li>
+                            <li>Acceptable camera specifications</li>
+                            <li>Optional maintenance services available at additional cost</li>
+                            <li>Platform information included in proposal</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-black/20 p-6 rounded-lg mb-8">
+                        <h4 class="text-xl font-bold text-secondary mb-4">Procurement Process</h4>
+                        <p class="mb-4">The city followed standard municipal procurement procedures:</p>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li>Technical questions were accepted through the IonWave e-procurement system</li>
+                            <li>Vendor proposals were submitted through IonWave</li>
+                            <li>The process followed standard RFP timelines</li>
+                            <li>Results were announced after vendor selection</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-secondary">The Contract</h2>
+                    <p>
+                        The Cedar Rapids Police Department's contract with Flock Safety outlines a surveillance system that includes:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li>70 fixed ALPR cameras throughout the city</li>
+                        <li>5 additional PTZ (pan, tilt, zoom) cameras</li>
+                        <li>Two-year lease agreement</li>
+                    </ul>
+
+                    <div class="bg-black/20 p-6 rounded-lg mt-8">
+                        <h4 class="text-xl font-bold text-secondary mb-4">Privacy Implications</h4>
+                        <p class="mb-4">
+                            While the contract includes privacy safeguards like data encryption and retention limits, several concerns remain:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>The system will track vehicle movements across 70 locations in our city</li>
+                            <li>"Vehicle identification beyond license plates" suggests broader surveillance capabilities</li>
+                            <li>Interagency sharing could expand the surveillance network beyond Cedar Rapids</li>
+                            <li>No independent oversight of specialized watch lists or search justifications</li>
+                            <li>No clear limits on how CRPD can use or share the data they own</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-white/10">
+                    <a href="/blog/" class="text-secondary hover:underline">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email text-secondary">Contact Us</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
+================
+File: blog/index.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EyesOffCR.org</title>
+    <meta name="description" content="Updates and analysis about surveillance technologies and ALPRs in Cedar Rapids, Iowa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+    <script type="module" crossorigin src="/assets/index-B4K8Z4Se.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CTfeZFBM.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-secondary hover:text-white transition-colors">Blog</a>
+                    <a href="/about.html" class="text-secondary hover:text-white transition-colors">About</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-secondary hover:text-white transition-colors">Blog</a>
+                    <a href="/about/" class="block px-3 py-2 text-secondary hover:text-white transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="section">
+        <div class="section-content max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-secondary mb-8">Latest Updates</h1>
+            
+            <!-- Blog Posts -->
+            <div class="space-y-16">
+                <!-- First Blog Post -->
+                <article class="bg-black/30 p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold text-secondary mb-4">
+                        Holding Cedar Rapids Accountable for Automated License Plate Readers (ALPR)
+                    </h2>
+                    <div class="text-sm text-gray-400 mb-8">02/08/2025</div>
+                    
+                    <div class="blog-content space-y-6">
+                        <p class="text-lg">
+                            Welcome to <strong class="text-secondary">EyesOffCedarRapids</strong>, a web-based, community-driven initiative focused on transparency, accountability, and raising awareness about the Cedar Rapids Police Department's (CRPD) use of automated license plate readers (ALPR). Our mission is to spark conversations, educate the public, and ensure responsible use of this technology.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-secondary">What's the Project About?</h3>
+                        <p>
+                            Automated license plate readers (ALPR) are powerful tools used to track vehicles in real time. While they can enhance public safety, their use raises critical questions about <strong class="text-secondary">privacy, civil rights, and oversight</strong>.
+                        </p>
+
+                        <p>At EyesOffCedarRapids, we aim to:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="text-secondary">Raise awareness</strong> about ALPR in Cedar Rapids</li>
+                            <li><strong class="text-secondary">Advocate for transparency</strong> and public involvement in its use</li>
+                            <li><strong class="text-secondary">Hold CRPD accountable</strong> through community dialogue on privacy and civil liberties</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-secondary">What Have We Accomplished?</h3>
+                        <p>We've built a foundation for community engagement:</p>
+                        <ol class="list-decimal list-inside space-y-2">
+                            <li><strong class="text-secondary">Website</strong> – Your hub for ALPR resources and updates</li>
+                            <li><strong class="text-secondary">Reddit Community</strong> – Join discussions at <a href="https://www.reddit.com/r/EyesOffCedarRapids" class="text-secondary hover:underline">r/EyesOffCedarRapids</a></li>
+                        </ol>
+
+                        <h3 class="text-2xl font-bold text-secondary">What We Need Next</h3>
+                        <p>We're looking for contributions and support to grow the movement:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="text-secondary">Infographics</strong>: Visual guides to explain ALPR and its impact</li>
+                            <li><strong class="text-secondary">Posters & Stickers</strong>: Designs to spread awareness</li>
+                            <li><strong class="text-secondary">Camera Locations</strong>: Help map ALPR installations</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-secondary">Get Involved</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="text-secondary">Stay Updated</strong>: Follow us on social media</li>
+                            <li><strong class="text-secondary">Contribute Ideas</strong>: Share creative concepts or research</li>
+                            <li><strong class="text-secondary">Volunteer</strong>: Help with infographics, camera mapping, or outreach</li>
+                            <li><strong class="text-secondary">Spread Awareness</strong>: Share our resources</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-secondary">Contact Us</h3>
+                        <p>
+                            Have ideas or want to get involved? Reach out via <a href="mailto:eyesoffcr@proton.me" class="text-secondary hover:underline">email</a> or Instagram DM. Together, we can ensure transparency, accountability, and responsible use of ALPR in Cedar Rapids.
+                        </p>
+
+                        <p class="text-lg"><strong class="text-secondary">Join us and make a difference!</strong></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="mailto:eyesoffcr@proton.me" class="text-secondary">eyesoffcr@proton.me</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
+================
+File: cypress/e2e/content.cy.js
+================
+describe('Content Tests', () => {
+  it('should have correct content on home page', () => {
+    cy.visit('/')
+    cy.get('h1').should('be.visible')
+    cy.contains(/surveillance/i).should('be.visible')
+    cy.get('img').should('have.attr', 'alt')
+  })
+
+  it('should have correct content on about page', () => {
+    cy.visit('/about.html')
+    cy.get('h1').should('be.visible')
+    cy.get('p').should('have.length.at.least', 1)
+  })
+
+  it('should have correct content on media package page', () => {
+    cy.visit('/media_package.html')
+    cy.get('h1').should('be.visible')
+    cy.get('.download-button').should('exist')
+    cy.get('.download-card').should('exist')
+  })
+
+  it('should have valid external links', () => {
+    cy.visit('/')
+    cy.get('a[href^="http"]').each(($link) => {
+      cy.wrap($link)
+        .should('have.attr', 'href')
+        .and('match', /^https?:\/\//)
+    })
+  })
+
+  it('should have proper meta tags', () => {
+    cy.visit('/')
+    cy.get('meta[name="description"]').should('exist')
+    cy.get('meta[name="viewport"]').should('exist')
+  })
+})
+
+================
+File: cypress/e2e/navigation.cy.js
+================
+describe('Navigation Tests', () => {
+  beforeEach(() => {
+    cy.visit('/')
+    cy.injectAxe()
+  })
+
+  it('should load the home page', () => {
+    cy.title().should('include', 'EyesOffCR.org')
+    cy.get('nav').should('be.visible')
+  })
+
+  it('should navigate to About page', () => {
+    cy.get('a[href*="about.html"]').first().click()
+    cy.url().should('include', 'about.html')
+  })
+
+  it('should navigate to Media Package page', () => {
+    cy.get('a[href*="media_package.html"]').first().click()
+    cy.url().should('include', 'media_package.html')
+  })
+
+  it('should have working navigation links in header', () => {
+    cy.get('nav').within(() => {
+      cy.get('a').should('have.length.at.least', 2)
+      cy.get('a').each(($el) => {
+        cy.wrap($el).should('have.attr', 'href')
+      })
+    })
+  })
+
+  it('should pass basic accessibility tests', () => {
+    cy.checkA11y(null, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag2aa']
+      },
+      rules: {
+        'color-contrast': { enabled: false } // Temporarily disable color contrast checks
+      }
+    })
+  })
+})
+
+================
+File: cypress/support/e2e.js
+================
+// Import cypress-axe commands
+import 'cypress-axe'
+
+// Import commands.js using ES2015 syntax:
+// import './commands'
+
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
+
+================
+File: public/images/grid-pattern.svg
+================
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00CED1" stroke-width="0.5" stroke-opacity="0.2"/>
+        </pattern>
+    </defs>
+    <rect width="100" height="100" fill="url(#grid)" />
+</svg>
+
+================
+File: src/css/main.css
+================
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: Inter, system-ui, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.section-header {
+  margin-bottom: 2rem;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 215 0 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #000, #000),
+                url('/images/grid-pattern.svg');
+}
+
+.highlight-section {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.action-button {
+  display: inline-block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.action-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
+/* Background color overrides */
+
+.bg-white\/10 {
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-black\/30, .bg-black\/20 {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.1;
+}
+
+/* Blog specific styles */
+
+.visible {
+  visibility: visible;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black\/20 {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 215 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(255 215 0 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-black\/30:hover {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.1;
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 215 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-secondary\/80:hover {
+  color: rgb(255 215 0 / 0.8);
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+================
+File: src/css/styles.css
+================
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+
+  section {
+    @apply bg-black;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-section px-4 md:px-8 lg:px-16;
+  }
+  
+  .section-header {
+    @apply text-4xl md:text-5xl font-display font-bold mb-8 text-secondary;
+  }
+  
+  .section-content {
+    @apply max-w-4xl mx-auto;
+  }
+  
+  .hero {
+    @apply min-h-screen flex items-center justify-center text-center;
+    background: linear-gradient(to bottom, #000, #000),
+                url('/images/grid-pattern.svg');
+  }
+  
+  .highlight-section {
+    @apply bg-black text-white;
+  }
+  
+  .danger-item {
+    @apply flex items-start gap-4 mb-6;
+  }
+  
+  .action-button {
+    @apply bg-accent hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full 
+           transition duration-300 inline-block;
+  }
+
+  /* Background color overrides */
+  .bg-white\/10 {
+    @apply bg-black bg-opacity-50;
+  }
+  
+  .bg-black\/30, .bg-black\/20 {
+    @apply bg-white bg-opacity-10;
+  }
+
+  /* Blog specific styles */
+  .blog-content {
+    @apply max-w-[800px] mx-auto leading-relaxed;
+  }
+
+  .blog-content h1 {
+    @apply text-4xl mb-4 text-secondary;
+  }
+
+  .blog-content h3 {
+    @apply text-2xl mt-8 mb-4 text-secondary;
+  }
+
+  .blog-content p {
+    @apply mb-6;
+  }
+
+  .blog-content ul {
+    @apply mb-6 pl-6 list-disc;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+
+  .blog-content hr {
+    @apply my-8 border-white border-opacity-10;
+  }
+
+  .blog-content strong {
+    @apply text-secondary;
+  }
+
+  .blog-meta {
+    @apply text-sm text-gray-400 mb-8;
+  }
+}
+
+================
+File: src/js/main.js
+================
+import '../css/styles.css';
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add scroll-based animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+// Observe all sections for fade-in animation
+document.querySelectorAll('section').forEach((section) => {
+    section.classList.add('opacity-0', 'transition-opacity', 'duration-1000');
+    observer.observe(section);
+});
+
+// Email obfuscation
+const emailParts = {
+    user: 'ZXllc29mZmNy',  // eyesoffcr
+    domain: 'cHJvdG9uLm1l'  // proton.me
+};
+
+function decodeEmailParts() {
+    return atob(emailParts.user) + '@' + atob(emailParts.domain);
+}
+
+// Initialize email links
+document.addEventListener('DOMContentLoaded', function() {
+    const emailLinks = document.querySelectorAll('.contact-email');
+    const decodedEmail = decodeEmailParts();
+    
+    emailLinks.forEach(link => {
+        link.href = `mailto:${decodedEmail}`;
+        if (link.classList.contains('show-email')) {
+            link.textContent = decodedEmail;
+        } else {
+            link.textContent = 'Contact Us';
+        }
+    });
+});
+
+================
+File: .gitignore
+================
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production build files
+/dist
+/build
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IDE - JetBrains
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Local Netlify folder
+.netlify
+
+# Vite
+*.local
+
+# Ignore sensitive files
+view_stats.sh
+*_stats.sh
+
+# Node modules and build
+node_modules/
+dist/
+.cache/
+
+# Environment files
+.env
+.env.*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+================
+File: .pa11yci
+================
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 10000,
+    "wait": 1000,
+    "ignore": [
+      "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail"
+    ]
+  },
+  "urls": [
+    "http://localhost:4173/",
+    "http://localhost:4173/about.html",
+    "http://localhost:4173/media_package.html"
+  ]
+}
+
+================
+File: .repomixignore
+================
+# Binary files
+*.pdf
+*.PDF
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.xlsx
+*.xls
+*.doc
+*.docx
+
+# Build directories
+dist/
+node_modules/
+
+# Other binary or large files
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.mp4
+*.mp3
+*.wav
+*.webm
+
+================
+File: about.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EyesOffCR.org</title>
+    <meta name="description" content="Learn about the dangers of mass surveillance technologies and ALPRs in Cedar Rapids, Iowa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script type="module" src="/src/js/main.js"></script>
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section">
+        <div class="section-content text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-secondary mb-6">
+                About EyesOffCR.org
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                Working to protect privacy and civil liberties in Cedar Rapids
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <div class="section-content">
+            <div class="bg-black/30 p-8 rounded-lg">
+                <h2 class="text-2xl font-bold mb-6 text-secondary">Our Mission</h2>
+                <p class="text-lg mb-6">
+                    Eyes Off CR is a REAL grassroots project dedicated to tracking and resisting the expansion of mass surveillance 
+                    in Cedar Rapids. We believe in transparency, accountability, and the protection of civil liberties.
+                </p>
+                <p class="text-lg mb-6">
+                    Our work focuses on documenting the deployment of Automated License Plate Readers (ALPRs), demanding transparency,
+                    and building community resistance to surveillance overreach.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="section highlight-section">
+        <div class="section-content">
+            <h2 class="section-header">What We Do</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Document</h3>
+                    <ul class="space-y-3">
+                        <li>• Map ALPR camera locations</li>
+                        <li>• Track policy changes</li>
+                        <li>• Monitor usage and impact</li>
+                        <li>• Research best practices</li>
+                    </ul>
+                </div>
+                <div class="bg-black/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Educate</h3>
+                    <ul class="space-y-3">
+                        <li>• Share research findings</li>
+                        <li>• Provide resources</li>
+                        <li>• Host community events</li>
+                        <li>• Publish updates</li>
+                    </ul>
+                </div>
+                <div class="bg-black/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Advocate</h3>
+                    <ul class="space-y-3">
+                        <li>• Demand transparency</li>
+                        <li>• Push for oversight</li>
+                        <li>• Propose solutions</li>
+                        <li>• Build coalitions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency & Support Section -->
+    <section class="section">
+        <div class="section-content">
+            <h2 class="section-header">Transparency & Support</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Open Source & Transparent</h3>
+                    <p class="text-lg mb-4">
+                        We believe in complete transparency. Our entire website is open source and available on 
+                        <a href="https://github.com/EyesOffCR/EyesOffCR" target="_blank" class="text-secondary hover:underline">GitHub</a>. 
+                        You can review our code, suggest improvements, or fork the project for your own community.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Monthly Costs</h3>
+                        <ul class="space-y-3 bg-black/20 p-4 rounded-lg">
+                            <li class="flex justify-between items-center">
+                                <span>Server Hosting</span>
+                                <span class="text-secondary">$40/month</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>Social Media Ads</span>
+                                <span class="text-secondary">TBD</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>Printing Materials</span>
+                                <span class="text-secondary">TBD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Resource Needs</h3>
+                        <ul class="space-y-3 bg-black/20 p-4 rounded-lg">
+                            <li>• Printing Services/Time</li>
+                            <li>• Graphic Design Support</li>
+                            <li>• Web Development</li>
+                            <li>• Social Media Management</li>
+                            <li>• Research & Documentation</li>
+                            <li>• Technical Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Hardware Research Fund</h3>
+                        <div class="bg-black/20 p-4 rounded-lg">
+                            <p class="mb-4">Help us understand the technology we're dealing with. We're raising funds to:</p>
+                            <ul class="space-y-2 mb-4">
+                                <li>• Purchase used/decommissioned cameras</li>
+                                <li>• Document internal components</li>
+                                <li>• Test security measures</li>
+                                <li>• Publish technical findings</li>
+                                <li>• Share research with other communities</li>
+                            </ul>
+                            <div class="flex justify-between items-center p-3 bg-black/30 rounded mb-4">
+                                <span>One-Time Goal:</span>
+                                <a href="https://www.ebay.com/itm/196939348819" 
+                                   target="_blank" 
+                                   class="text-secondary hover:underline">
+                                    Used ALPR Camera ($75)
+                                </a>
+                            </div>
+                            <p class="text-sm mb-4 text-gray-300">This is a one-time purchase goal. We seek decommissioned or used hardware to minimize costs while maximizing research value.</p>
+                            <a href="#" class="contact-email inline-block px-4 py-2 bg-secondary text-black font-bold rounded-lg text-sm">
+                                Support Research
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Financial Support</h3>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">Support Options</h4>
+                                <p class="text-sm mb-4">We are currently developing a transparent funding plan that will detail:</p>
+                                <ul class="space-y-2 mb-4">
+                                    <li>• Specific project goals and budgets</li>
+                                    <li>• Fund allocation and oversight</li>
+                                    <li>• Regular public reporting</li>
+                                    <li>• Community input process</li>
+                                </ul>
+                                <p class="text-sm">Once our funding framework is established, we will open various support options including cryptocurrency and traditional payment methods. Follow our social media for updates on our planning process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Volunteer Support</h3>
+                        <div class="bg-black/20 p-4 rounded-lg">
+                            <p class="mb-4">We welcome support in many forms:</p>
+                            <ul class="space-y-2 mb-4">
+                                <li>• Professional printing services</li>
+                                <li>• Graphic design expertise</li>
+                                <li>• Technical development</li>
+                                <li>• Content creation</li>
+                                <li>• Community outreach</li>
+                            </ul>
+                            <a href="#" class="contact-email inline-block px-4 py-2 bg-secondary text-black font-bold rounded-lg text-sm">
+                                Offer Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay Connected Section -->
+    <section class="section highlight-section">
+        <div class="section-content">
+            <h2 class="section-header">Stay Connected</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://www.instagram.com/eyesoffcr/" 
+                   target="_blank"
+                   class="flex items-center space-x-3 p-4 bg-black/20 rounded-lg hover:bg-black/30 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://x.com/EyesOffCR" 
+                   target="_blank"
+                   class="flex items-center space-x-3 p-4 bg-black/20 rounded-lg hover:bg-black/30 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </svg>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://github.com/EyesOffCR/EyesOffCR" 
+                   target="_blank"
+                   class="flex items-center space-x-3 p-4 bg-black/20 rounded-lg hover:bg-black/30 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="section">
+        <div class="section-content">
+            <h2 class="section-header">Get Involved</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Join Our Efforts</h3>
+                        <p class="mb-4">
+                            We're always looking for community members who want to help protect privacy in Cedar Rapids. 
+                            Here's how you can contribute:
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li>• Report camera locations</li>
+                            <li>• Share our resources</li>
+                            <li>• Attend city council meetings</li>
+                            <li>• Help with research</li>
+                            <li>• Spread awareness</li>
+                        </ul>
+                        <a href="#" class="contact-email inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Stay Connected</h3>
+                        <p class="mb-4">
+                            Follow us to stay updated on surveillance issues in Cedar Rapids:
+                        </p>
+                        <div class="space-y-4">
+                            <a href="https://www.instagram.com/eyesoffcr/" 
+                               target="_blank"
+                               class="flex items-center space-x-3 p-4 bg-black/20 rounded-lg hover:bg-black/30 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Follow us on Instagram</span>
+                            </a>
+                            <a href="/blog/" 
+                               class="flex items-center space-x-3 p-4 bg-black/20 rounded-lg hover:bg-black/30 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 2v4M8 2v4M3 10h18"></path>
+                                </svg>
+                                <span>Read our Blog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email show-email text-secondary">Contact Us</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
+================
+File: binary-manifest.json
+================
+{
+  "binaryFiles": {
+    "downloads/social": {
+      "QnA.PDF": {
+        "type": "application/pdf",
+        "size": "binary",
+        "description": "Q&A document from the RFP process"
+      },
+      "PUR0424-254.pdf": {
+        "type": "application/pdf",
+        "size": "binary",
+        "description": "Original RFP document"
+      },
+      "Award_Detail_Spreadsheet.xlsx": {
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "size": "binary",
+        "description": "Contract award details"
+      }
+    },
+    "downloads/stickers": {
+      "sticker_*.png": {
+        "type": "image/png",
+        "size": "binary",
+        "description": "Sticker designs"
+      }
+    },
+    "images": {
+      "*.png": {
+        "type": "image/png",
+        "size": "binary",
+        "description": "Website images"
+      }
+    }
+  },
+  "processInstructions": {
+    "skipBinaryProcessing": true,
+    "includeInManifest": true,
+    "preserveMetadata": true
+  }
+}
+
+================
+File: cypress.config.js
+================
+import { defineConfig } from 'cypress'
+
+export default defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:4173', // Vite preview server URL
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+  viewportWidth: 1280,
+  viewportHeight: 720,
+  video: false,
+  screenshotOnRunFailure: true,
+})
+
+================
+File: deploy.sh
+================
+#!/bin/bash
+
+# EyesOffCR.org Deployment Script
+# Based on the deflock.me project
+
+# Color codes for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Print colored status messages
+print_status() {
+    echo -e "${GREEN}[+]${NC} $1"
+}
+
+print_error() {
+    echo -e "${RED}[!]${NC} $1"
+}
+
+print_warning() {
+    echo -e "${YELLOW}[*]${NC} $1"
+}
+
+# Check if script has sudo privileges
+if ! [ $(id -u) = 0 ]; then
+    print_error "Please run with sudo"
+    exit 1
+fi
+
+# Clean any previous builds
+print_status "Cleaning previous builds..."
+rm -rf dist
+
+# Build the site
+print_status "Building site..."
+sudo -u $SUDO_USER npm install
+sudo -u $SUDO_USER npm run build
+
+if [ $? -ne 0 ]; then
+    print_error "Build failed!"
+    exit 1
+fi
+
+# Build CSS
+print_status "Building CSS..."
+sudo -u $SUDO_USER npx tailwindcss -i ./src/css/styles.css -o ./dist/assets/main.css
+
+# Show what we're replacing
+print_status "Current contents of /var/www/eyesoffcr:"
+ls -la /var/www/eyesoffcr/
+
+# Deploy the built site
+print_status "Deploying built files..."
+rm -rf /var/www/eyesoffcr/*
+
+# Create necessary directories
+print_status "Creating deployment directories..."
+mkdir -p /var/www/eyesoffcr/assets
+mkdir -p /var/www/eyesoffcr/src
+mkdir -p /var/www/eyesoffcr/blog
+
+# Copy the main site files and assets
+print_status "Copying main site files and assets..."
+cp -r dist/* /var/www/eyesoffcr/
+
+# Copy HTML files from root
+print_status "Copying HTML files..."
+cp *.html /var/www/eyesoffcr/
+
+# Copy source files for development mode
+print_status "Copying source files..."
+cp -r src/* /var/www/eyesoffcr/src/
+
+# Copy the blog files
+print_status "Copying blog files..."
+cp -r blog/* /var/www/eyesoffcr/blog/ 2>/dev/null || true
+
+# Copy additional resources
+print_status "Copying additional resources..."
+cp -r downloads /var/www/eyesoffcr/
+
+# Set permissions
+print_status "Setting permissions..."
+chown -R www-data:www-data /var/www/eyesoffcr
+chmod -R 755 /var/www/eyesoffcr
+
+print_status "Done! Current contents of /var/www/eyesoffcr:"
+ls -la /var/www/eyesoffcr/
+
+print_status "Verifying deployment..."
+if [ ! -f "/var/www/eyesoffcr/assets/main.css" ]; then
+    print_error "CSS file missing in deployment!"
+    exit 1
+fi
+
+print_status "Deployment complete!"
+print_warning "Don't forget to verify the site is working at https://eyesoffcr.org"
+print_warning "Check that the blog is accessible at https://eyesoffcr.org/blog/"
+
+================
+File: index.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyesOffCR.org - Protect Cedar Rapids from Mass Surveillance</title>
+    <meta name="description" content="Learn about the dangers of mass surveillance technologies and ALPRs in Cedar Rapids, Iowa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
+                    <a href="/about.html" class="text-white hover:text-secondary transition-colors">About</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
+                    <a href="#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
+                    <a href="/about.html" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add this script right before the closing body tag -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-64 md:w-96 h-auto mx-auto mb-6" />
+            <h1 class="text-5xl md:text-7xl font-bold text-secondary mb-4">
+                Track Flock Surveillance in Cedar Rapids
+            </h1>
+            <p class="text-lg md:text-2xl mb-6">
+                Mapping Flock's ALPR cameras and demanding transparency about how they track our community.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#camera-map" class="action-button bg-secondary">
+                    View Camera Map
+                </a>
+                <a href="#transparency" class="action-button bg-white/10">
+                    Transparency Portal
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="learn-more" class="section">
+        <div class="section-content">
+            <h2 class="section-header">What Are Flock ALPR Cameras?</h2>
+            <p class="text-lg mb-6">
+                In March 2024, Cedar Rapids approved a $499,250 contract with Flock Safety to install automated license plate readers throughout our city.
+            </p>
+
+            <!-- Add Camera Image -->
+            <div class="bg-black/30 p-6 rounded-lg mb-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Know What to Look For</h3>
+                        <p class="mb-4">Flock cameras are typically mounted on poles and look like this:</p>
+                        <ul class="space-y-2">
+                            <li>• Usually mounted 10-14 feet high</li>
+                            <li>• Solar panel on top</li>
+                            <li>• Black camera housing</li>
+                            <li>• Often near intersections or major roads</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/flock.png" 
+                             alt="Flock ALPR Camera" 
+                             class="rounded-lg max-h-[300px] w-auto shadow-lg"
+                             title="Example of a Flock ALPR camera installation" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">What They Collect</h3>
+                    <ul class="space-y-3">
+                        <li>• Photograph every passing vehicle</li>
+                        <li>• Record license plates, vehicle details, and location</li>
+                        <li>• Track movement patterns across the city</li>
+                        <li>• Store data for extended periods</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Why It Matters</h3>
+                    <ul class="space-y-3">
+                        <li>• No public oversight of data collection</li>
+                        <li>• History of misuse in other cities</li>
+                        <li>• Disproportionate impact on communities of color</li>
+                        <li>• No proven impact on public safety</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camera Map Section -->
+    <section id="camera-map" class="section highlight-section">
+        <div class="section-content">
+            <h2 class="section-header">Cedar Rapids ALPR Camera Map</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="mb-6 text-center">
+                    <p class="text-lg mb-4">
+                        Cedar Rapids plans to deploy Flock Safety ALPR cameras throughout the city. Unlike Oak Park, IL and other cities, 
+                        Cedar Rapids has not provided a public map of camera locations or a transparency portal.
+                    </p>
+                    <a href="https://transparency.flocksafety.com/oak-park-il-pd" 
+                       target="_blank" 
+                       class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg mb-8">
+                        View Oak Park's Transparency Portal
+                    </a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">What Oak Park Shows</h3>
+                        <ul class="space-y-3">
+                            <li>• Exact camera locations on public map</li>
+                            <li>• Monthly search statistics</li>
+                            <li>• Reason for each search</li>
+                            <li>• Hot list source tracking</li>
+                            <li>• Data sharing agreements</li>
+                            <li>• Authorized user list</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">What Cedar Rapids Hides</h3>
+                        <ul class="space-y-3">
+                            <li>• No public camera location map</li>
+                            <li>• No search transparency</li>
+                            <li>• No data sharing disclosure</li>
+                            <li>• No user accountability</li>
+                            <li>• No community oversight</li>
+                            <li>• No impact reporting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                    <iframe 
+                        src="https://deflock.me/map#map=12/41.980805/-91.661339"
+                        class="w-full h-[600px] rounded-lg"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Community Camera Tracking</h3>
+                        <p class="mb-4">Help us create the transparency our city won't provide. Report Flock camera locations:</p>
+                        <ul class="space-y-2">
+                            <li>• Include cross streets or GPS coordinates</li>
+                            <li>• Note installation date if known</li>
+                            <li>• Describe camera mounting (pole type, height)</li>
+                            <li>• Submit photos if possible</li>
+                        </ul>
+                        <a href="#" class="contact-email inline-block mt-4 px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Submit Camera Location
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Current Status</h3>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">Unknown</div>
+                                <div class="text-sm">Number of Cameras</div>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">March 2024</div>
+                                <div class="text-sm">Contract Approved</div>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <div class="text-3xl font-bold text-secondary">$499,250</div>
+                                <div class="text-sm">Two-Year Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Portal Section -->
+    <section id="transparency" class="section">
+        <div class="section-content">
+            <h2 class="section-header">Demand a Real Transparency Portal</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <div class="mb-8">
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Oak Park's Portal Shows:</h3>
+                            <div class="bg-black/20 p-6 rounded-lg">
+                                <ul class="space-y-3">
+                                    <li>• Total vehicles scanned</li>
+                                    <li>• Monthly searches performed</li>
+                                    <li>• Search reasons breakdown</li>
+                                    <li>• Data sharing agreements</li>
+                                    <li>• Authorized user list</li>
+                                    <li>• Camera locations map</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-secondary">Cedar Rapids Should Show:</h3>
+                            <div class="bg-black/20 p-6 rounded-lg">
+                                <ul class="space-y-3">
+                                    <li>• Real-time scanning statistics</li>
+                                    <li>• Monthly transparency reports</li>
+                                    <li>• Search audit logs</li>
+                                    <li>• Data retention compliance</li>
+                                    <li>• Agency access list</li>
+                                    <li>• Public camera map</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Usage Stats</h3>
+                        <ul class="space-y-2">
+                            <li>• Total scans per camera</li>
+                            <li>• Search frequency</li>
+                            <li>• Hit/miss rates</li>
+                            <li>• Search reasons</li>
+                            <li>• Outcome tracking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Access Logs</h3>
+                        <ul class="space-y-2">
+                            <li>• Officer name/badge</li>
+                            <li>• Search timestamp</li>
+                            <li>• Reason for search</li>
+                            <li>• Case number</li>
+                            <li>• Results shared</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Oversight</h3>
+                        <ul class="space-y-2">
+                            <li>• Monthly audits</li>
+                            <li>• Policy compliance</li>
+                            <li>• Error reporting</li>
+                            <li>• Misuse tracking</li>
+                            <li>• Impact analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-lg mb-4">Oak Park shows what real transparency looks like. Will Cedar Rapids do the same?</p>
+                    <a href="#take-action" class="inline-block px-8 py-3 bg-secondary text-black font-bold rounded-lg">
+                        Demand Transparency
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="section highlight-section">
+        <div class="section-content text-center">
+            <h2 class="section-header">Take Action</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <p class="text-xl mb-8">
+                    Join us in demanding transparency and accountability for surveillance technology in Cedar Rapids.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Contact Council</h3>
+                        <p class="mb-4">Tell city leaders we need transparency about how Flock cameras are used.</p>
+                        <a href="https://www.cedar-rapids.org/local_government/city_council/mayor_and_city_council/index.php" 
+                           target="_blank" 
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Contact Leaders
+                        </a>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Spread the Word</h3>
+                        <p class="mb-4">Share information about Flock surveillance with your neighbors.</p>
+                        <a href="/media_package.html" 
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Get Resources
+                        </a>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Get Updates</h3>
+                        <p class="mb-4">Stay informed about surveillance in Cedar Rapids.</p>
+                        <a href="https://www.instagram.com/eyesoffcr/" 
+                           target="_blank"
+                           class="inline-block px-6 py-2 bg-secondary text-black font-bold rounded-lg">
+                            Follow Updates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section id="sources" class="section">
+        <div class="section-content">
+            <h2 class="section-header">Sources and Info</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">News Coverage</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.kcrg.com/2025/01/10/cedar-rapids-police-expanding-use-automated-license-plate-readers/" target="_blank" class="text-secondary hover:underline">
+                                KCRG: Cedar Rapids police expanding use of Automated License Plate Readers (Jan 2025)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Research & Studies</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://link.springer.com/article/10.1007/s11292-011-9133-9" target="_blank" class="text-secondary hover:underline">
+                                Journal of Experimental Criminology: No deterrent effect from ALPR patrols in crime hot spots
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.eff.org/deeplinks/2015/01/what-we-learned-oakland-raw-alpr-data" target="_blank" class="text-secondary hover:underline">
+                                EFF Study: ALPRs disproportionately deployed in communities of color
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.freedomtothriveop.com/blog/zine-analyzes-flock-alpr-cameras-in-oak-park-il" target="_blank" class="text-secondary hover:underline">
+                                Oak Park Study: 84% of ALPR-initiated stops targeted Black drivers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Security Concerns</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.404media.co/researcher-turns-insecure-license-plate-cameras-into-open-source-surveillance-tool/" target="_blank" class="text-secondary hover:underline">
+                                Critical Security Flaw Found in Motorola ALPR System (2025)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.aclu.org/blog/privacy-technology/location-tracking/san-francisco-woman-pulled-out-car-gunpoint-because" target="_blank" class="text-secondary hover:underline">
+                                ACLU: San Francisco Woman Pulled Out of Car at Gunpoint Due to ALPR Error
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Documented Abuse</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/" target="_blank" class="text-secondary hover:underline">
+                                Police Officer Used Flock ALPRs to Stalk Estranged Wife
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://inewsource.org/2022/01/06/police-share-license-plate-data/" target="_blank" class="text-secondary hover:underline">
+                                Police Breaking the Law by Sharing Drivers' Data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.latimes.com/business/technology/story/2020-12-21/pasadena-long-beach-police-ice-automated-license-plate-reader-data" target="_blank" class="text-secondary hover:underline">
+                                Police Sharing ALPR Data with ICE Despite Legal Prohibitions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email show-email text-secondary">Contact Us</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+================
+File: media_package.html
+================
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Package - EyesOffCR.org</title>
+    <meta name="description" content="Download media resources about ALPR surveillance in Cedar Rapids, Iowa.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script type="module" src="/src/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.css">
+    <style>
+        /* Ensure content is always visible and background is black */
+        body, section {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: #000000 !important;
+        }
+        
+        /* Override any other background colors */
+        .highlight-section {
+            background-color: #000000 !important;
+        }
+        
+        .bg-white\/10 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+        .bg-black\/30, .bg-black\/20 {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .download-card {
+            @apply bg-black/30 p-6 rounded-lg transition-transform duration-300 hover:scale-105;
+        }
+
+        .download-button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #f59e0b;
+            color: black;
+            font-weight: bold;
+            border-radius: 0.375rem;
+            text-align: center;
+            transition: background-color 0.2s;
+            /* Make touch target larger on mobile */
+            min-height: 44px;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+        }
+
+        .gallery-grid {
+            display: grid;
+            /* Adjust grid for smaller screens */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 0.5rem;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .gallery-item {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: transform 0.2s;
+            /* Prevent horizontal scrolling on mobile */
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            /* Adjust height for better mobile viewing */
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .gallery-item-info {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .gallery-item-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            /* Adjust font size for mobile */
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+        }
+
+        .gallery-item-desc {
+            /* Adjust font size for mobile */
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            color: #ccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .category-header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            margin: 1.5rem 0.5rem;
+            border-radius: 0.5rem;
+            color: #f59e0b;
+            /* Adjust font size for mobile */
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+        }
+
+        .pswp {
+            --pswp-bg: #000;
+        }
+
+        /* Add responsive container padding */
+        .max-w-7xl {
+            padding-left: max(1rem, env(safe-area-inset-left));
+            padding-right: max(1rem, env(safe-area-inset-right));
+        }
+
+        /* Optimize header text for mobile */
+        .section-content h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .section-content p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Add better touch targets for mobile navigation */
+        .md\:flex a {
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+        }
+
+        /* Ensure PhotoSwipe controls are touch-friendly */
+        .pswp__button {
+            min-width: 44px;
+            min-height: 44px;
+        }
+
+        /* Add safe area insets for modern mobile browsers */
+        @supports(padding: max(0px)) {
+            body {
+                padding-left: min(0vmin, env(safe-area-inset-left));
+                padding-right: min(0vmin, env(safe-area-inset-right));
+                padding-bottom: min(0vmin, env(safe-area-inset-bottom));
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .swiper-slide {
+            width: 280px;
+            margin-right: 20px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #f59e0b !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: #f59e0b !important;
+        }
+
+        .meme-gallery {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .meme-header {
+            color: #f59e0b;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+
+        @media (max-width: 640px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="bg-primary text-white">
+    <!-- Navigation -->
+    <nav class="bg-primary py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#what-is-flock" class="text-white hover:text-secondary transition-colors">About ALPRs</a>
+                    <a href="/#dangers" class="text-white hover:text-secondary transition-colors">Dangers</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/about.html" class="text-white hover:text-secondary transition-colors">About</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
+                    <a href="/#what-is-flock" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About ALPRs</a>
+                    <a href="/#dangers" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Dangers</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/about.html" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section">
+        <div class="section-content text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-secondary mb-6">
+                Media Package
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                Download ready-to-use materials to help spread awareness about Flock surveillance in Cedar Rapids
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Flyers Section -->
+        <h2 class="category-header text-2xl font-bold">Flyers & Handouts</h2>
+        <div class="gallery-grid" id="flyers-gallery">
+            <div class="gallery-item">
+                <a href="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
+                         alt="We Watch The Watchers - Color"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Color Version</div>
+                    <div class="gallery-item-desc">High-quality color version for professional printing</div>
+                    <a href="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <a href="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png"
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png" 
+                         alt="We Watch The Watchers - B&W"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">B&W Version</div>
+                    <div class="gallery-item-desc">Optimized for office printing and photocopying</div>
+                    <a href="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <h2 class="category-header text-2xl font-bold">Social Media Graphics</h2>
+        <div class="gallery-grid" id="social-gallery">
+            <div class="gallery-item">
+                <a href="/downloads/social/flock.png"
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/social/flock.png" 
+                         alt="Flock"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Flock</div>
+                    <div class="gallery-item-desc">ALPR surveillance infographic</div>
+                    <a href="/downloads/social/flock.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/social/resolution_0823-06-24.png"
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/social/resolution_0823-06-24.png" 
+                         alt="Resolution"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Resolution</div>
+                    <div class="gallery-item-desc">Council resolution document</div>
+                    <a href="/downloads/social/resolution_0823-06-24.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/social/deflocme.png"
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/social/deflocme.png" 
+                         alt="Deflock.me"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Deflock.me</div>
+                    <div class="gallery-item-desc">Campaign banner</div>
+                    <a href="/downloads/social/deflocme.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add Stickers -->
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_001.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_001.png" 
+                         alt="Sticker 1"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 1</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_001.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_002.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_002.png" 
+                         alt="Sticker 2"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 2</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_002.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_003.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_003.png" 
+                         alt="Sticker 3"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 3</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_003.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_004.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_004.png" 
+                         alt="Sticker 4"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 4</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_004.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_005.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_005.png" 
+                         alt="Sticker 5"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 5</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_005.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_006.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_006.png" 
+                         alt="Sticker 6"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 6</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_006.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_007.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_007.png" 
+                         alt="Sticker 7"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 7</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_007.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_008.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_008.png" 
+                         alt="Sticker 8"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 8</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_008.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_009.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_009.png" 
+                         alt="Sticker 9"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 9</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_009.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_010.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_010.png" 
+                         alt="Sticker 10"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 10</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_010.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_011.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_011.png" 
+                         alt="Sticker 11"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 11</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_011.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="/downloads/stickers/sticker_012.png" 
+                   data-pswp-width="1200" 
+                   data-pswp-height="800">
+                    <img src="/downloads/stickers/sticker_012.png" 
+                         alt="Sticker 12"/>
+                </a>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Sticker Design 12</div>
+                    <div class="gallery-item-desc">Print-ready sticker design</div>
+                    <a href="/downloads/stickers/sticker_012.png" 
+                       download 
+                       class="download-button">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documents Section -->
+        <h2 class="category-header text-2xl font-bold">Documents</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4" id="documents-section">
+            <div class="bg-black/20 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Request for Proposal (RFP)</h3>
+                <p class="text-gray-300 mb-4">Original RFP document (PUR0424-254) for the ALPR system.</p>
+                <a href="/downloads/social/PUR0424-254.pdf" 
+                   class="download-button"
+                   download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="bg-black/20 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Scope of Services</h3>
+                <p class="text-gray-300 mb-4">Official document detailing the requirements for the ALPR system and video cameras.</p>
+                <a href="/downloads/social/Scope of Services.pdf" 
+                   class="download-button"
+                   download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="bg-black/20 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Questions and Answers</h3>
+                <p class="text-gray-300 mb-4">Official Q&A document from the RFP process.</p>
+                <a href="/downloads/social/QnA.PDF" 
+                   class="download-button"
+                   download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="bg-black/20 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Award Detail Spreadsheet</h3>
+                <p class="text-gray-300 mb-4">Detailed spreadsheet of the contract award.</p>
+                <a href="/downloads/social/Award_Detail_Spreadsheet.xlsx" 
+                   class="download-button"
+                   download>
+                    Download Excel
+                </a>
+            </div>
+        </div>
+
+        <!-- Meme Gallery -->
+        <div class="meme-gallery">
+            <div class="meme-header">Swipe for More Memes →</div>
+            <div class="swiper meme-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <a href="/downloads/social/meme_1_color.png"
+                               data-pswp-width="1200" 
+                               data-pswp-height="800">
+                                <img src="/downloads/social/meme_1_color.png" 
+                                     alt="Meme 1"/>
+                            </a>
+                            <div class="gallery-item-info">
+                                <div class="gallery-item-title">Meme 1</div>
+                                <a href="/downloads/social/meme_1_color.png" 
+                                   download 
+                                   class="download-button">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <a href="/downloads/social/meme_2_color.png"
+                               data-pswp-width="1200" 
+                               data-pswp-height="800">
+                                <img src="/downloads/social/meme_2_color.png" 
+                                     alt="Meme 2"/>
+                            </a>
+                            <div class="gallery-item-info">
+                                <div class="gallery-item-title">Meme 2</div>
+                                <a href="/downloads/social/meme_2_color.png" 
+                                   download 
+                                   class="download-button">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <a href="/downloads/social/meme_3_color.png"
+                               data-pswp-width="1200" 
+                               data-pswp-height="800">
+                                <img src="/downloads/social/meme_3_color.png" 
+                                     alt="Meme 3"/>
+                            </a>
+                            <div class="gallery-item-info">
+                                <div class="gallery-item-title">Meme 3</div>
+                                <a href="/downloads/social/meme_3_color.png" 
+                                   download 
+                                   class="download-button">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <a href="/downloads/social/meme_4_color.png"
+                               data-pswp-width="1200" 
+                               data-pswp-height="800">
+                                <img src="/downloads/social/meme_4_color.png" 
+                                     alt="Meme 4"/>
+                            </a>
+                            <div class="gallery-item-info">
+                                <div class="gallery-item-title">Meme 4</div>
+                                <a href="/downloads/social/meme_4_color.png" 
+                                   download 
+                                   class="download-button">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <a href="/downloads/social/meme_5_color.png"
+                               data-pswp-width="1200" 
+                               data-pswp-height="800">
+                                <img src="/downloads/social/meme_5_color.png" 
+                                     alt="Meme 5"/>
+                            </a>
+                            <div class="gallery-item-info">
+                                <div class="gallery-item-title">Meme 5</div>
+                                <a href="/downloads/social/meme_5_color.png" 
+                                   download 
+                                   class="download-button">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Usage Guidelines -->
+    <section class="section">
+        <div class="section-content">
+            <h2 class="section-header">Media Guidelines</h2>
+            <div class="bg-black/30 p-8 rounded-lg">
+                <p class="text-lg mb-6">
+                    All materials are free to use and modify for non-commercial purposes in spreading awareness about surveillance in Cedar Rapids. Please credit EyesOffCR.org when possible.
+                </p>
+                <p class="text-lg mb-6">
+                    For questions about usage or to request custom materials, contact us at <a href="#" class="contact-email show-email text-secondary">Contact Us</a>
+                </p>
+                <div class="bg-black/20 p-6 rounded-lg mt-6">
+                    <h3 class="text-xl font-bold mb-4 text-secondary">Printing Tips</h3>
+                    <ul class="space-y-2">
+                        <li>• For best results, use the CMYK versions for professional printing</li>
+                        <li>• RGB versions are optimized for home/office printing</li>
+                        <li>• Black & white versions are provided for economical printing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attribution Section -->
+    <section class="section highlight-section">
+        <div class="section-content text-center">
+            <div class="bg-black/30 p-8 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 text-secondary">About This Project</h2>
+                <p class="text-lg mb-4">
+                    EyesOffCR.org is based on the <a href="https://deflock.me" target="_blank" class="text-secondary hover:underline">deflock.me</a> project, 
+                    a community initiative to track and resist Flock surveillance systems.
+                </p>
+                <p class="text-lg">
+                    We're part of a growing network of communities working to protect privacy and civil liberties from mass surveillance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section bg-primary text-center">
+        <div class="section-content">
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
+            <div class="flex justify-center items-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/eyesoffcr/" target="_blank" class="text-secondary hover:text-secondary/80 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email show-email text-secondary">Contact Us</a></p>
+            <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe-lightbox.esm.js'
+        import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.esm.js'
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.gallery-grid',
+            children: 'a',
+            pswpModule: PhotoSwipe
+        });
+
+        lightbox.init();
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Add Swiper JS before the closing body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.meme-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
+
+================
+File: package.json
+================
+{
+  "name": "eyesoffcr",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static informational website about surveillance in Cedar Rapids",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:css": "tailwindcss -i ./src/css/styles.css -o ./src/css/main.css",
+    "prebuild": "npm run clean && mkdir -p dist/assets",
+    "build": "npm run build:css && vite build",
+    "preview": "vite preview",
+    "test": "npm run test:e2e && npm run test:a11y && npm run test:html",
+    "test:e2e": "xvfb-run -a cypress run",
+    "test:e2e:open": "cypress open",
+    "test:a11y": "pa11y-ci ./index.html ./about.html ./media_package.html",
+    "test:html": "html-validate ./index.html ./about.html ./media_package.html"
+  },
+  "devDependencies": {
+    "axe-core": "^4.8.3",
+    "cypress": "^13.6.4",
+    "cypress-axe": "^1.5.0",
+    "html-validate": "^8.9.1",
+    "pa11y-ci": "^3.1.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "repomix": "^0.2.26"
+  }
+}
+
+================
+File: README.md
+================
+# EyesOffCR.org
+
+A static informational website raising awareness about mass surveillance technologies, particularly Automated License Plate Readers (ALPRs), in Cedar Rapids, Iowa.
+
+## Project Overview
+
+This website is built using:
+- HTML5
+- Tailwind CSS for styling
+- Minimal JavaScript for smooth scrolling
+- SVG icons for visual elements
+
+## Development Setup
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the development server:
+```bash
+npm run dev
+```
+
+3. Build for production:
+```bash
+npm run build
+```
+
+## Project Structure
+
+- `index.html` - Main webpage content
+- `tailwind.config.js` - Tailwind CSS configuration
+- `src/css/styles.css` - Custom CSS styles
+- `src/js/main.js` - JavaScript functionality
+- `public/` - Static assets (images, icons)
+
+## License
+
+Copyright © 2024 EyesOffCR.org. All rights reserved.
+
+================
+File: repomix.config.json
+================
+{
+  "version": "1.0",
+  "output": {
+    "path": "./repomix-output.txt",
+    "format": "plain"
+  },
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "downloads/social/QnA.PDF",
+      "downloads/social/PUR0424-254.pdf",
+      "downloads/social/Award_Detail_Spreadsheet.xlsx",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.gif",
+      "**/*.ico"
+    ]
+  }
+}
+
+================
+File: tailwind.config.js
+================
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./about.html",
+    "./media_package.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#000000',      // Black
+        'secondary': '#FFD700',    // Yellow
+        'accent': '#FF0000',       // Red
+        'highlight': '#00CED1',    // Teal
+      },
+      fontFamily: {
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'display': ['Montserrat', 'system-ui', 'sans-serif'],
+      },
+      spacing: {
+        'section': '4rem',
+        'header': '6rem',
+      },
+    },
+  },
+  plugins: [],
+}
+
+================
+File: vite.config.cjs
+================
+const { defineConfig } = require('vite')
+
+module.exports = defineConfig({
+  server: {
+    port: 3000,
+    open: true
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        about: './about.html',
+        media_package: './media_package.html'
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'main.css') {
+            return 'assets/main.css';
+          }
+          return 'assets/[name].[hash][extname]';
+        }
+      }
+    }
+  },
+  css: {
+    postcss: {
+      plugins: [require('tailwindcss')]
+    }
+  }
+})
+
+
+
+================================================================
+End of Codebase
+================================================================

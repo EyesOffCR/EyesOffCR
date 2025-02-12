@@ -45,7 +45,19 @@
   
   .action-button {
     @apply bg-accent hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full 
-           transition duration-300 inline-block;
+           transition duration-300 inline-block border-2 border-transparent
+           hover:border-white focus:border-white focus:outline-none;
+  }
+
+  .action-button.bg-secondary {
+    background-color: theme('colors.secondary');
+    @apply hover:bg-secondary-dark text-black font-bold
+           border-2 border-black hover:border-white focus:border-white;
+  }
+
+  .show-email {
+    @apply text-secondary underline decoration-2 hover:text-white focus:text-white
+           transition duration-300;
   }
 
   /* Background color overrides */
