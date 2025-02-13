@@ -165,6 +165,18 @@
             <div class="section-content">
                 <h2 id="camera-map-title" class="section-header text-heading-text">Cedar Rapids ALPR Camera Map</h2>
                 <div class="bg-black/30 p-8 rounded-lg">
+                    <div class="aspect-w-16 aspect-h-9 mb-6">
+                        <iframe
+                            src="https://deflock.me/map#map=12/41.980805/-91.661339"
+                            class="w-full h-[600px] rounded-lg"
+                            title="Interactive map of Flock camera locations in Cedar Rapids"
+                            aria-label="Map showing locations of Flock surveillance cameras in Cedar Rapids"
+                            allowfullscreen
+                            loading="lazy"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML += '<div class=\'bg-black/20 p-6 rounded-lg text-center\'><p>Map loading failed. Please try refreshing the page.</p></div>';">
+                        </iframe>
+                    </div>
+
                     <div class="mb-6 text-center">
                         <p class="text-lg mb-4">
                             Cedar Rapids has deployed 64 Flock Safety ALPR cameras throughout the city. The Cedar Rapids Police Department maintains a transparency portal that provides information about their ALPR program.
@@ -280,18 +292,6 @@
                                 Read Full ALPR Policy
                             </a>
                         </div>
-                    </div>
-
-                    <div class="aspect-w-16 aspect-h-9 mb-6">
-                        <iframe
-                            src="https://deflock.me/map#map=12/41.980805/-91.661339"
-                            class="w-full h-[600px] rounded-lg"
-                            title="Interactive map of Flock camera locations in Cedar Rapids"
-                            aria-label="Map showing locations of Flock surveillance cameras in Cedar Rapids"
-                            allowfullscreen
-                            loading="lazy"
-                            onerror="this.style.display='none'; this.parentElement.innerHTML += '<div class=\'bg-black/20 p-6 rounded-lg text-center\'><p>Map loading failed. Please try refreshing the page.</p></div>';">
-                        </iframe>
                     </div>
                 </div>
             </div>
