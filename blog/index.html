@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - EyesOffCR.org</title>
+    <title>Blog - EyesOffCR.org - Informing Cedar Rapids</title>
     <meta name="description" content="Updates and analysis about surveillance technologies and ALPRs in Cedar Rapids, Iowa.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/main.css">
@@ -14,16 +14,16 @@
             visibility: visible !important;
             background-color: #000000 !important;
         }
-        
+
         /* Override any other background colors */
         .highlight-section {
             background-color: #000000 !important;
         }
-        
+
         .bg-white\/10 {
             background-color: rgba(0, 0, 0, 0.5) !important;
         }
-        
+
         .bg-black\/30, .bg-black\/20 {
             background-color: rgba(255, 255, 255, 0.1) !important;
         }
@@ -38,7 +38,7 @@
                 <a href="/" class="flex items-center">
                     <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
                 </a>
-                
+
                 <!-- Navigation Links -->
                 <div class="hidden md:flex space-x-8">
                     <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
@@ -51,8 +51,12 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="md:hidden text-white hover:text-secondary"
+                        id="mobile-menu-button"
+                        aria-label="Toggle mobile menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
@@ -79,7 +83,7 @@
         <section class="section" aria-labelledby="blog-title" role="banner">
             <div class="section-content max-w-4xl mx-auto">
                 <h1 id="blog-title" class="text-4xl md:text-5xl font-bold text-secondary mb-8">Latest Updates</h1>
-                
+
                 <!-- Blog Posts -->
                 <div class="space-y-16">
                     <!-- First Blog Post -->
@@ -88,7 +92,7 @@
                             Holding Cedar Rapids Accountable for Automated License Plate Readers (ALPR)
                         </h2>
                         <div class="text-sm text-gray-400 mb-8">02/08/2025</div>
-                        
+
                         <div class="blog-content space-y-6">
                             <p class="text-lg">
                                 Welcome to <strong class="text-secondary">EyesOffCedarRapids</strong>, a web-based, community-driven initiative focused on transparency, accountability, and raising awareness about the Cedar Rapids Police Department's (CRPD) use of automated license plate readers (ALPR). Our mission is to spark conversations, educate the public, and ensure responsible use of this technology.
@@ -157,7 +161,8 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isExpanded = mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
         });
 
         // Close mobile menu when clicking a link
@@ -165,8 +170,9 @@
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
 </body>
-</html> 
+</html>

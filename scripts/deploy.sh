@@ -38,7 +38,7 @@ sudo -u $SUDO_USER npm install
 
 # Build the site
 print_status "Building site..."
-sudo -u $SUDO_USER npm run build
+sudo -u $SUDO_USER NODE_ENV=production npm run build
 
 if [ $? -ne 0 ]; then
     print_error "Build failed!"
@@ -59,25 +59,11 @@ rm -rf /var/www/eyesoffcr/*
 
 # Create necessary directories
 print_status "Creating deployment directories..."
-mkdir -p /var/www/eyesoffcr/assets
-mkdir -p /var/www/eyesoffcr/src
-mkdir -p /var/www/eyesoffcr/blog
+mkdir -p /var/www/eyesoffcr
 
-# Copy the main site files and assets
-print_status "Copying main site files and assets..."
+# Copy the built files
+print_status "Copying production build..."
 cp -r dist/* /var/www/eyesoffcr/
-
-# Copy HTML files from root
-print_status "Copying HTML files..."
-cp *.html /var/www/eyesoffcr/
-
-# Copy source files for development mode
-print_status "Copying source files..."
-cp -r src/* /var/www/eyesoffcr/src/
-
-# Copy the blog files
-print_status "Copying blog files..."
-cp -r blog/* /var/www/eyesoffcr/blog/ 2>/dev/null || true
 
 # Copy additional resources
 print_status "Copying additional resources..."
@@ -92,7 +78,7 @@ cp package-lock.json /var/www/eyesoffcr/
 # Install production dependencies
 print_status "Installing production dependencies..."
 cd /var/www/eyesoffcr
-npm install --production
+npm install --omit=dev
 
 # Set up systemd service
 print_status "Setting up systemd service..."

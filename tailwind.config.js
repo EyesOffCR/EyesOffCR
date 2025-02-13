@@ -10,10 +10,14 @@ export default {
     extend: {
       colors: {
         'primary': '#000000',      // Black
-        'secondary': '#FFD700',    // Yellow
-        'secondary-dark': '#CC9900', // Darker gold for better contrast
+        'secondary': '#9D9D9D',    // Light gray with better contrast
+        'secondary-dark': '#7A7A7A',
         'accent': '#FF0000',       // Red
-        'highlight': '#00CED1',    // Teal
+        'highlight': '#008080',    // Teal
+        'text-primary': '#FFFFFF', // White text
+        'text-secondary': '#9D9D9D', // Updated for better contrast
+        'heading-text': '#FFFFFF',  // White for maximum contrast
+        'background': '#000000',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

@@ -14,6 +14,10 @@
   section {
     @apply bg-black;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#5A5A5A] font-bold;
+  }
 }
 
 @layer components {
@@ -22,7 +26,7 @@
   }
   
   .section-header {
-    @apply text-4xl md:text-5xl font-display font-bold mb-8 text-secondary;
+    @apply text-4xl md:text-5xl font-display font-bold mb-8 text-[#5A5A5A];
   }
   
   .section-content {
@@ -33,6 +37,10 @@
     @apply min-h-screen flex items-center justify-center text-center;
     background: linear-gradient(to bottom, #000, #000),
                 url('/images/grid-pattern.svg');
+  }
+
+  #hero-title {
+    @apply text-heading-text;
   }
   
   .highlight-section {
@@ -69,17 +77,22 @@
     @apply bg-white bg-opacity-10;
   }
 
+  /* Sources section headers */
+  #sources h3 {
+    @apply text-heading-text;
+  }
+
   /* Blog specific styles */
   .blog-content {
     @apply max-w-[800px] mx-auto leading-relaxed;
   }
 
   .blog-content h1 {
-    @apply text-4xl mb-4 text-secondary;
+    @apply text-4xl mb-4 text-heading-text;
   }
 
   .blog-content h3 {
-    @apply text-2xl mt-8 mb-4 text-secondary;
+    @apply text-2xl mt-8 mb-4 text-heading-text;
   }
 
   .blog-content p {

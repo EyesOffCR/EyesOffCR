@@ -1,7 +1,7 @@
 {
   "name": "eyesoffcr",
   "version": "1.0.0",
-  "description": "EyesOffCR.org - Protecting Privacy in Cedar Rapids",
+  "description": "EyesOffCR.org - Informing Cedar Rapids",
   "main": "server.js",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "npm run test:e2e && npm run test:a11y && npm run test:html",
     "test:e2e": "xvfb-run -a cypress run",
-    "test:a11y": "pa11y-ci ./index.html ./about.html ./media_package.html",
+    "test:a11y": "pa11y-ci http://localhost:4173/ http://localhost:4173/about.html http://localhost:4173/media_package.html",
     "test:html": "html-validate *.html",
     "start": "NODE_ENV=production node server.js",
     "serve": "npm run build && npm start"

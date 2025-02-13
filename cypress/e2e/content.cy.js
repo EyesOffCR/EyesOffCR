@@ -14,10 +14,10 @@ describe('Content Tests', () => {
 
   it('should have correct content on media package page', () => {
     cy.visit('/media_package.html')
-    cy.get('h1').should('be.visible')
-    cy.get('.gallery-item').should('exist')
-    cy.get('.download-button').should('exist')
-    cy.get('.gallery-item-info').should('exist')
+    cy.get('#page-title').should('be.visible')
+    cy.contains('Social Media Graphics').should('exist')
+    cy.contains('Documents & Research').should('exist')
+    cy.get('a[href*="/downloads/"]').should('exist')
   })
 
   it('should have valid external links', () => {

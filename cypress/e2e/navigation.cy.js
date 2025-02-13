@@ -29,16 +29,37 @@ describe('Navigation Tests', () => {
   })
 
   it('should pass basic accessibility tests', () => {
-    cy.checkA11y(null, {
-      runOnly: {
-        type: 'tag',
-        values: ['wcag2a', 'wcag2aa', 'wcag2aaa', 'wcag21a', 'wcag21aa', 'wcag22aa']
+    cy.checkA11y(
+      null,
+      {
+        runOnly: {
+          type: 'tag',
+          values: ['wcag2a', 'wcag2aa', 'wcag2aaa', 'wcag21a', 'wcag21aa', 'wcag22aa']
+        },
+        rules: {
+          'landmark-one-main': { enabled: false },
+          'page-has-heading-one': { enabled: false },
+          'region': { enabled: false }
+        }
       },
-      rules: {
-        'landmark-one-main': { enabled: false },  // We have a main landmark with role="main"
-        'page-has-heading-one': { enabled: false },  // We have an h1 that's visually styled
-        'region': { enabled: false }  // We're using semantic HTML5 sectioning elements
+      (violations) => {
+        // Log each violation
+        violations.forEach((violation) => {
+          const nodes = Cypress.$(violation.nodes.map((node) => node.target).join(','))
+          Cypress.log({
+            name: 'A11Y ERROR',
+            message: `${violation.id} - ${violation.description}`,
+            consoleProps: () => violation,
+          })
+          // Log the element in command log
+          Cypress.log({
+            name: 'ELEMENTS',
+            message: violation.nodes.length,
+            consoleProps: () => ({ elements: nodes.length ? nodes.get() : [] }),
+            $el: nodes,
+          })
+        })
       }
-    })
+    )
   })
 }) 

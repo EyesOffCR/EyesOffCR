@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Package - EyesOffCR.org</title>
-    <meta name="description" content="Download media resources about ALPR surveillance in Cedar Rapids, Iowa.">
+    <meta name="description" content="Download media resources about surveillance in Cedar Rapids">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/main.css">
     <script type="module" src="/src/js/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.css">
+    <link rel="icon" type="image/svg+xml" href="/images/camera-icon.svg">
+    <link rel="apple-touch-icon" href="/images/camera-icon.svg">
     <style>
-        /* Ensure content is always visible and background is black */
         body, section {
             opacity: 1 !important;
             visibility: visible !important;
             background-color: #000000 !important;
         }
-        
-        /* Override any other background colors */
+
         .highlight-section {
             background-color: #000000 !important;
         }
-        
+
         .bg-white\/10 {
             background-color: rgba(0, 0, 0, 0.5) !important;
         }
-        
+
         .bg-black\/30, .bg-black\/20 {
             background-color: rgba(255, 255, 255, 0.1) !important;
         }
@@ -44,14 +44,12 @@
             border-radius: 0.375rem;
             text-align: center;
             transition: background-color 0.2s;
-            /* Make touch target larger on mobile */
             min-height: 44px;
             font-size: clamp(0.875rem, 2vw, 1rem);
         }
 
         .gallery-grid {
             display: grid;
-            /* Adjust grid for smaller screens */
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 1.5rem;
             padding: 0.5rem;
@@ -65,7 +63,6 @@
             border-radius: 0.5rem;
             overflow: hidden;
             transition: transform 0.2s;
-            /* Prevent horizontal scrolling on mobile */
             max-width: 100%;
             margin: 0 auto;
         }
@@ -76,7 +73,6 @@
 
         .gallery-item img {
             width: 100%;
-            /* Adjust height for better mobile viewing */
             height: 180px;
             object-fit: cover;
             border-radius: 0.5rem 0.5rem 0 0;
@@ -91,12 +87,10 @@
             font-weight: bold;
             margin-bottom: 0.5rem;
             color: #fff;
-            /* Adjust font size for mobile */
             font-size: clamp(1rem, 2.5vw, 1.25rem);
         }
 
         .gallery-item-desc {
-            /* Adjust font size for mobile */
             font-size: clamp(0.875rem, 2vw, 1rem);
             color: #ccc;
             margin-bottom: 1rem;
@@ -109,7 +103,6 @@
             margin: 1.5rem 0.5rem;
             border-radius: 0.5rem;
             color: #f59e0b;
-            /* Adjust font size for mobile */
             font-size: clamp(1.25rem, 3vw, 1.5rem);
         }
 
@@ -117,13 +110,11 @@
             --pswp-bg: #000;
         }
 
-        /* Add responsive container padding */
         .max-w-7xl {
             padding-left: max(1rem, env(safe-area-inset-left));
             padding-right: max(1rem, env(safe-area-inset-right));
         }
 
-        /* Optimize header text for mobile */
         .section-content h1 {
             font-size: clamp(2rem, 5vw, 3.5rem);
             line-height: 1.2;
@@ -136,19 +127,16 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Add better touch targets for mobile navigation */
         .md\:flex a {
             padding: 0.5rem;
             margin: 0 0.5rem;
         }
 
-        /* Ensure PhotoSwipe controls are touch-friendly */
         .pswp__button {
             min-width: 44px;
             min-height: 44px;
         }
 
-        /* Add safe area insets for modern mobile browsers */
         @supports(padding: max(0px)) {
             body {
                 padding-left: min(0vmin, env(safe-area-inset-left));
@@ -198,31 +186,36 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
-<body class="bg-primary text-white">
+<body class="bg-black text-white">
     <!-- Navigation -->
-    <nav class="bg-primary py-4 sticky top-0 z-50 shadow-lg">
+    <nav class="bg-black py-4 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <a href="/" class="flex items-center">
-                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto" />
+                    <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="h-10 w-auto">
                 </a>
-                
                 <!-- Navigation Links -->
                 <div class="hidden md:flex space-x-8">
                     <a href="/#learn-more" class="text-white hover:text-secondary transition-colors">Learn More</a>
-                    <a href="/#what-is-flock" class="text-white hover:text-secondary transition-colors">About ALPRs</a>
-                    <a href="/#dangers" class="text-white hover:text-secondary transition-colors">Dangers</a>
-                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/#camera-map" class="text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="text-white hover:text-secondary transition-colors">Transparency</a>
                     <a href="/#take-action" class="text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="text-white hover:text-secondary transition-colors">Blog</a>
                     <a href="/about.html" class="text-white hover:text-secondary transition-colors">About</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden text-white hover:text-secondary" id="mobile-menu-button">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button type="button"
+                        class="md:hidden text-white hover:text-secondary"
+                        id="mobile-menu-button"
+                        aria-label="Toggle mobile menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
@@ -232,564 +225,176 @@
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/#learn-more" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Learn More</a>
-                    <a href="/#what-is-flock" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About ALPRs</a>
-                    <a href="/#dangers" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Dangers</a>
-                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/#camera-map" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Camera Map</a>
+                    <a href="/#transparency" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Transparency</a>
                     <a href="/#take-action" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Take Action</a>
+                    <a href="/#sources" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Sources</a>
+                    <a href="/blog/" class="block px-3 py-2 text-white hover:text-secondary transition-colors">Blog</a>
                     <a href="/about.html" class="block px-3 py-2 text-white hover:text-secondary transition-colors">About</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <section class="section">
-        <div class="section-content text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-secondary mb-6">
-                Media Package
-            </h1>
-            <p class="text-lg md:text-xl mb-8">
-                Download ready-to-use materials to help spread awareness about Flock surveillance in Cedar Rapids
-            </p>
-        </div>
-    </section>
-
-    <!-- Main Gallery -->
-    <div class="max-w-7xl mx-auto px-4">
-        <!-- Flyers Section -->
-        <h2 class="category-header text-2xl font-bold">Flyers & Handouts</h2>
-        <div class="gallery-grid" id="flyers-gallery">
-            <div class="gallery-item">
-                <a href="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
-                         alt="We Watch The Watchers - Color"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Color Version</div>
-                    <div class="gallery-item-desc">High-quality color version for professional printing</div>
-                    <a href="/downloads/flyers/EyesOfCR_WeWatch_Color_.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <a href="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png"
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png" 
-                         alt="We Watch The Watchers - B&W"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">B&W Version</div>
-                    <div class="gallery-item-desc">Optimized for office printing and photocopying</div>
-                    <a href="/downloads/flyers/EyesOfCR_WeWatch_Color__black_and_white.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Social Media Section -->
-        <h2 class="category-header text-2xl font-bold">Social Media Graphics</h2>
-        <div class="gallery-grid" id="social-gallery">
-            <div class="gallery-item">
-                <a href="/downloads/social/flock.png"
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/social/flock.png" 
-                         alt="Flock"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Flock</div>
-                    <div class="gallery-item-desc">ALPR surveillance infographic</div>
-                    <a href="/downloads/social/flock.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/social/resolution_0823-06-24.png"
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/social/resolution_0823-06-24.png" 
-                         alt="Resolution"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Resolution</div>
-                    <div class="gallery-item-desc">Council resolution document</div>
-                    <a href="/downloads/social/resolution_0823-06-24.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/social/deflocme.png"
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/social/deflocme.png" 
-                         alt="Deflock.me"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Deflock.me</div>
-                    <div class="gallery-item-desc">Campaign banner</div>
-                    <a href="/downloads/social/deflocme.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <!-- Add Stickers -->
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_001.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_001.png" 
-                         alt="Sticker 1"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 1</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_001.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_002.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_002.png" 
-                         alt="Sticker 2"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 2</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_002.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_003.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_003.png" 
-                         alt="Sticker 3"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 3</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_003.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_004.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_004.png" 
-                         alt="Sticker 4"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 4</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_004.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_005.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_005.png" 
-                         alt="Sticker 5"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 5</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_005.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_006.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_006.png" 
-                         alt="Sticker 6"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 6</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_006.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_007.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_007.png" 
-                         alt="Sticker 7"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 7</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_007.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_008.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_008.png" 
-                         alt="Sticker 8"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 8</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_008.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_009.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_009.png" 
-                         alt="Sticker 9"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 9</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_009.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_010.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_010.png" 
-                         alt="Sticker 10"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 10</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_010.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_011.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_011.png" 
-                         alt="Sticker 11"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 11</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_011.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="/downloads/stickers/sticker_012.png" 
-                   data-pswp-width="1200" 
-                   data-pswp-height="800">
-                    <img src="/downloads/stickers/sticker_012.png" 
-                         alt="Sticker 12"/>
-                </a>
-                <div class="gallery-item-info">
-                    <div class="gallery-item-title">Sticker Design 12</div>
-                    <div class="gallery-item-desc">Print-ready sticker design</div>
-                    <a href="/downloads/stickers/sticker_012.png" 
-                       download 
-                       class="download-button">
-                        Download
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Documents Section -->
-        <h2 class="category-header text-2xl font-bold">Documents</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4" id="documents-section">
-            <div class="bg-black/20 p-6 rounded-lg">
-                <h3 class="text-xl font-bold mb-2">Request for Proposal (RFP)</h3>
-                <p class="text-gray-300 mb-4">Original RFP document (PUR0424-254) for the ALPR system.</p>
-                <a href="/downloads/social/PUR0424-254.pdf" 
-                   class="download-button"
-                   download>
-                    Download PDF
-                </a>
-            </div>
-
-            <div class="bg-black/20 p-6 rounded-lg">
-                <h3 class="text-xl font-bold mb-2">Scope of Services</h3>
-                <p class="text-gray-300 mb-4">Official document detailing the requirements for the ALPR system and video cameras.</p>
-                <a href="/downloads/social/Scope of Services.pdf" 
-                   class="download-button"
-                   download>
-                    Download PDF
-                </a>
-            </div>
-
-            <div class="bg-black/20 p-6 rounded-lg">
-                <h3 class="text-xl font-bold mb-2">Questions and Answers</h3>
-                <p class="text-gray-300 mb-4">Official Q&A document from the RFP process.</p>
-                <a href="/downloads/social/QnA.PDF" 
-                   class="download-button"
-                   download>
-                    Download PDF
-                </a>
-            </div>
-
-            <div class="bg-black/20 p-6 rounded-lg">
-                <h3 class="text-xl font-bold mb-2">Award Detail Spreadsheet</h3>
-                <p class="text-gray-300 mb-4">Detailed spreadsheet of the contract award.</p>
-                <a href="/downloads/social/Award_Detail_Spreadsheet.xlsx" 
-                   class="download-button"
-                   download>
-                    Download Excel
-                </a>
-            </div>
-        </div>
-
-        <!-- Meme Gallery -->
-        <div class="meme-gallery">
-            <div class="meme-header">Swipe for More Memes →</div>
-            <div class="swiper meme-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <a href="/downloads/social/meme_1_color.png"
-                               data-pswp-width="1200" 
-                               data-pswp-height="800">
-                                <img src="/downloads/social/meme_1_color.png" 
-                                     alt="Meme 1"/>
-                            </a>
-                            <div class="gallery-item-info">
-                                <div class="gallery-item-title">Meme 1</div>
-                                <a href="/downloads/social/meme_1_color.png" 
-                                   download 
-                                   class="download-button">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <a href="/downloads/social/meme_2_color.png"
-                               data-pswp-width="1200" 
-                               data-pswp-height="800">
-                                <img src="/downloads/social/meme_2_color.png" 
-                                     alt="Meme 2"/>
-                            </a>
-                            <div class="gallery-item-info">
-                                <div class="gallery-item-title">Meme 2</div>
-                                <a href="/downloads/social/meme_2_color.png" 
-                                   download 
-                                   class="download-button">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <a href="/downloads/social/meme_3_color.png"
-                               data-pswp-width="1200" 
-                               data-pswp-height="800">
-                                <img src="/downloads/social/meme_3_color.png" 
-                                     alt="Meme 3"/>
-                            </a>
-                            <div class="gallery-item-info">
-                                <div class="gallery-item-title">Meme 3</div>
-                                <a href="/downloads/social/meme_3_color.png" 
-                                   download 
-                                   class="download-button">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <a href="/downloads/social/meme_4_color.png"
-                               data-pswp-width="1200" 
-                               data-pswp-height="800">
-                                <img src="/downloads/social/meme_4_color.png" 
-                                     alt="Meme 4"/>
-                            </a>
-                            <div class="gallery-item-info">
-                                <div class="gallery-item-title">Meme 4</div>
-                                <a href="/downloads/social/meme_4_color.png" 
-                                   download 
-                                   class="download-button">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="gallery-item">
-                            <a href="/downloads/social/meme_5_color.png"
-                               data-pswp-width="1200" 
-                               data-pswp-height="800">
-                                <img src="/downloads/social/meme_5_color.png" 
-                                     alt="Meme 5"/>
-                            </a>
-                            <div class="gallery-item-info">
-                                <div class="gallery-item-title">Meme 5</div>
-                                <a href="/downloads/social/meme_5_color.png" 
-                                   download 
-                                   class="download-button">
-                                    Download
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Usage Guidelines -->
-    <section class="section">
-        <div class="section-content">
-            <h2 class="section-header">Media Guidelines</h2>
-            <div class="bg-black/30 p-8 rounded-lg">
-                <p class="text-lg mb-6">
-                    All materials are free to use and modify for non-commercial purposes in spreading awareness about surveillance in Cedar Rapids. Please credit EyesOffCR.org when possible.
-                </p>
-                <p class="text-lg mb-6">
-                    For questions about usage or to request custom materials, contact us at <a href="#" class="contact-email show-email text-secondary">Contact Us</a>
-                </p>
-                <div class="bg-black/20 p-6 rounded-lg mt-6">
-                    <h3 class="text-xl font-bold mb-4 text-secondary">Printing Tips</h3>
-                    <ul class="space-y-2">
-                        <li>• For best results, use the CMYK versions for professional printing</li>
-                        <li>• RGB versions are optimized for home/office printing</li>
-                        <li>• Black & white versions are provided for economical printing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Attribution Section -->
-    <section class="section highlight-section">
-        <div class="section-content text-center">
-            <div class="bg-black/30 p-8 rounded-lg">
-                <h2 class="text-2xl font-bold mb-4 text-secondary">About This Project</h2>
-                <p class="text-lg mb-4">
-                    EyesOffCR.org is based on the <a href="https://deflock.me" target="_blank" class="text-secondary hover:underline">deflock.me</a> project, 
-                    a community initiative to track and resist Flock surveillance systems.
-                </p>
-                <p class="text-lg">
-                    We're part of a growing network of communities working to protect privacy and civil liberties from mass surveillance.
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Header Section -->
+        <header class="section" aria-labelledby="page-title">
+            <div class="section-content text-center">
+                <h1 id="page-title" class="text-5xl md:text-6xl font-bold text-secondary mb-6">
+                    Media &amp; Resources
+                </h1>
+                <p class="text-lg md:text-xl mb-8">
+                    Download and share information about surveillance in Cedar Rapids
                 </p>
             </div>
-        </div>
-    </section>
+        </header>
+
+        <!-- Resources Section -->
+        <section class="section">
+            <div class="section-content">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Social Media Graphics -->
+                    <div class="bg-black/30 p-6 rounded-lg">
+                        <h2 class="text-2xl font-bold mb-6 text-secondary">Social Media Graphics</h2>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <h3 class="text-xl font-bold mb-4 text-secondary">Instagram Posts</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <a href="/downloads/social/post1.png"
+                                       download
+                                       class="block p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                        <img src="/downloads/social/post1.png"
+                                             alt="Instagram post about ALPR cameras"
+                                             class="w-full h-auto rounded mb-2">
+                                        <span class="text-sm">Download Post 1</span>
+                                    </a>
+                                    <a href="/downloads/social/post2.png"
+                                       download
+                                       class="block p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                        <img src="/downloads/social/post2.png"
+                                             alt="Instagram post about surveillance concerns"
+                                             class="w-full h-auto rounded mb-2">
+                                        <span class="text-sm">Download Post 2</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <h3 class="text-xl font-bold mb-4 text-secondary">Story Graphics</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <a href="/downloads/social/story1.png"
+                                       download
+                                       class="block p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                        <img src="/downloads/social/story1.png"
+                                             alt="Instagram story about camera locations"
+                                             class="w-full h-auto rounded mb-2">
+                                        <span class="text-sm">Download Story 1</span>
+                                    </a>
+                                    <a href="/downloads/social/story2.png"
+                                       download
+                                       class="block p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                        <img src="/downloads/social/story2.png"
+                                             alt="Instagram story about privacy concerns"
+                                             class="w-full h-auto rounded mb-2">
+                                        <span class="text-sm">Download Story 2</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documents -->
+                    <div class="bg-black/30 p-6 rounded-lg">
+                        <h2 class="text-2xl font-bold mb-6 text-secondary">Documents &amp; Research</h2>
+                        <div class="space-y-4">
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <h3 class="text-xl font-bold mb-4 text-secondary">Official Documents</h3>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="/downloads/social/PUR0424-254.pdf"
+                                           download
+                                           class="flex items-center space-x-3 p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M4 18h12V6h-4V2H4v16zm2-6h8v-1H6v1zm0 2h8v-1H6v1zm0 2h8v-1H6v1zm0-6h4V9H6v1zm0-3h4V6H6v1zm0-3h4V3H6v1z"></path>
+                                            </svg>
+                                            <span>Flock Contract ($499,250)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/downloads/social/ALPRPolicy-CRPD.pdf"
+                                           download
+                                           class="flex items-center space-x-3 p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M4 18h12V6h-4V2H4v16zm2-6h8v-1H6v1zm0 2h8v-1H6v1zm0 2h8v-1H6v1zm0-6h4V9H6v1zm0-3h4V6H6v1zm0-3h4V3H6v1z"></path>
+                                            </svg>
+                                            <span>CRPD ALPR Policy</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-black/20 p-4 rounded-lg">
+                                <h3 class="text-xl font-bold mb-4 text-secondary">Research &amp; Analysis</h3>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="/downloads/research/alpr-research.pdf"
+                                           download
+                                           class="flex items-center space-x-3 p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M4 18h12V6h-4V2H4v16zm2-6h8v-1H6v1zm0 2h8v-1H6v1zm0 2h8v-1H6v1zm0-6h4V9H6v1zm0-3h4V6H6v1zm0-3h4V3H6v1z"></path>
+                                            </svg>
+                                            <span>ALPR Impact Analysis</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/downloads/research/privacy-concerns.pdf"
+                                           download
+                                           class="flex items-center space-x-3 p-4 bg-black/30 rounded-lg hover:bg-black/40 transition-colors">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M4 18h12V6h-4V2H4v16zm2-6h8v-1H6v1zm0 2h8v-1H6v1zm0 2h8v-1H6v1zm0-6h4V9H6v1zm0-3h4V6H6v1zm0-3h4V3H6v1z"></path>
+                                            </svg>
+                                            <span>Privacy Impact Report</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Section -->
+        <section class="section highlight-section">
+            <div class="section-content text-center">
+                <h2 class="section-header">Share These Resources</h2>
+                <div class="bg-black/30 p-8 rounded-lg max-w-3xl mx-auto">
+                    <p class="text-lg mb-6">
+                        Help spread awareness about surveillance in Cedar Rapids. Share these resources on social media, with your neighbors, or at community meetings.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <a href="https://www.instagram.com/eyesoffcr/"
+                           target="_blank"
+                           class="action-button bg-secondary">
+                            Follow Us on Instagram
+                        </a>
+                        <a href="/about.html"
+                           class="action-button bg-white/10">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="section bg-primary text-center">
         <div class="section-content">
-            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4" />
-            <div class="flex justify-center items-center space-x-4 mb-4">
-                <a href="https://www.instagram.com/eyesoffcr/" target="_blank" class="text-secondary hover:text-secondary/80 transition-colors">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-            </div>
+            <img src="/images/logo-trans.png" alt="EyesOffCR.org Logo" class="w-48 h-auto mx-auto mb-4">
             <p class="text-sm mb-2">Contact us: <a href="#" class="contact-email show-email text-secondary">Contact Us</a></p>
             <p class="text-sm opacity-75">© 2024 EyesOffCR.org. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- PhotoSwipe -->
-    <script type="module">
-        import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe-lightbox.esm.js'
-        import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.esm.js'
-
-        const lightbox = new PhotoSwipeLightbox({
-            gallery: '.gallery-grid',
-            children: 'a',
-            pswpModule: PhotoSwipe
-        });
-
-        lightbox.init();
-    </script>
 
     <!-- Mobile Menu Script -->
     <script>
@@ -806,6 +411,20 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+    </script>
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe-lightbox.esm.js'
+        import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.esm.js'
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.gallery-grid',
+            children: 'a',
+            pswpModule: PhotoSwipe
+        });
+
+        lightbox.init();
     </script>
 
     <!-- Add Swiper JS before the closing body tag -->
@@ -826,4 +445,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
